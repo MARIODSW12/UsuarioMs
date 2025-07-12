@@ -1,0 +1,539 @@
+2025-05-22 20:55:08,806 [INFO] Iniciando solicitud POST /api/users/create
+2025-05-22 20:55:09,313 [INFO] Conexión a MongoDB establecida correctamente.
+2025-05-22 20:55:09,322 [INFO] Procesando comando CreateUser para mariangelicaibarra@gmail.com
+2025-05-22 20:55:09,324 [INFO] Iniciando búsqueda de rol con ID 6818b7af035415cfcd8aa22a
+2025-05-22 20:55:10,465 [INFO] Rol con ID 6818b7af035415cfcd8aa22a obtenido exitosamente.
+2025-05-22 20:55:10,467 [INFO] Iniciando búsqueda de usuario con email mariangelicaibarra@gmail.com
+2025-05-22 20:55:10,534 [WARN] No se encontró usuario con email mariangelicaibarra@gmail.com
+2025-05-22 20:55:10,537 [INFO] Iniciando inserción de usuario con ID b5ade5f0-e932-49bb-9b95-dacccec779fa
+2025-05-22 20:55:10,688 [INFO] Usuario con ID b5ade5f0-e932-49bb-9b95-dacccec779fa insertado exitosamente en la base de datos.
+2025-05-22 20:55:10,688 [INFO] Usuario mariangelicaibarra@gmail.com creado con éxito con ID b5ade5f0-e932-49bb-9b95-dacccec779fa
+2025-05-22 20:55:10,692 [INFO] Procesando UserCreatedEvent para usuario ID b5ade5f0-e932-49bb-9b95-dacccec779fa
+2025-05-22 20:55:11,588 [INFO] Evento UserCreated publicado exitosamente en RabbitMQ para usuario ID b5ade5f0-e932-49bb-9b95-dacccec779fa
+2025-05-22 20:55:11,589 [INFO] Procesando UserCreatedEvent para usuario ID b5ade5f0-e932-49bb-9b95-dacccec779fa
+2025-05-22 20:55:11,636 [INFO] Conexión a MongoDB establecida correctamente.
+2025-05-22 20:55:11,640 [INFO] Procesando UserCreatedEvent para usuario ID b5ade5f0-e932-49bb-9b95-dacccec779fa
+2025-05-22 20:55:11,641 [INFO] Iniciando inserción de usuario con ID b5ade5f0-e932-49bb-9b95-dacccec779fa
+2025-05-22 20:55:11,713 [INFO] Usuario con ID b5ade5f0-e932-49bb-9b95-dacccec779fa insertado exitosamente en la base de datos.
+2025-05-22 20:55:11,713 [INFO] Usuario ID b5ade5f0-e932-49bb-9b95-dacccec779fa agregado exitosamente a la base de datos.
+2025-05-22 20:55:11,773 [INFO] Evento UserCreated publicado exitosamente en RabbitMQ para usuario ID b5ade5f0-e932-49bb-9b95-dacccec779fa
+2025-05-22 20:55:11,773 [INFO] Procesando UserCreatedEvent para usuario ID b5ade5f0-e932-49bb-9b95-dacccec779fa
+2025-05-22 20:55:11,780 [INFO] Procesando UserCreatedEvent para usuario ID b5ade5f0-e932-49bb-9b95-dacccec779fa
+2025-05-22 20:55:11,780 [INFO] Iniciando inserción de usuario con ID b5ade5f0-e932-49bb-9b95-dacccec779fa
+2025-05-22 20:55:11,931 [ERROR] Error al insertar usuario con ID b5ade5f0-e932-49bb-9b95-dacccec779fa en la base de datos.
+MongoDB.Driver.MongoWriteException: A write operation resulted in an error. WriteError: { Category : "DuplicateKey", Code : 11000, Message : "E11000 duplicate key error collection: usuarios_read.usuarios index: _id_ dup key: { _id: "b5ade5f0-e932-49bb-9b95-dacccec779fa" }" }.
+ ---> MongoDB.Driver.MongoBulkWriteException`1[MongoDB.Bson.BsonDocument]: A bulk write operation resulted in one or more errors. WriteErrors: [ { Category : "DuplicateKey", Code : 11000, Message : "E11000 duplicate key error collection: usuarios_read.usuarios index: _id_ dup key: { _id: "b5ade5f0-e932-49bb-9b95-dacccec779fa" }" } ].
+   at MongoDB.Driver.MongoCollectionImpl`1.BulkWriteAsync(IClientSessionHandle session, IEnumerable`1 requests, BulkWriteOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.UsingImplicitSessionAsync[TResult](Func`2 funcAsync, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionBase`1.InsertOneAsync(TDocument document, InsertOneOptions options, Func`3 bulkWriteAsync)
+   --- End of inner exception stack trace ---
+   at MongoDB.Driver.MongoCollectionBase`1.InsertOneAsync(TDocument document, InsertOneOptions options, Func`3 bulkWriteAsync)
+   at Usuarios.Infrastructure.Persistence.Repository.MongoRead.MongoReadUserRepository.AddAsync(BsonDocument user) in C:\Users\anale\OneDrive\Documentos\UCAB\DESA\Proyecto\Usuarios-Microservice\Usuarios.Infrastructure\Persistence\Repository\MongoRead\MongoReadUserRepository.cs:line 30
+2025-05-22 20:55:11,942 [INFO] Evento UserCreated publicado exitosamente en RabbitMQ para usuario ID b5ade5f0-e932-49bb-9b95-dacccec779fa
+2025-05-22 20:55:11,954 [INFO] Procesando UserCreatedEvent para usuario ID b5ade5f0-e932-49bb-9b95-dacccec779fa
+2025-05-22 20:55:11,983 [INFO] Procesando UserCreatedEvent para usuario ID b5ade5f0-e932-49bb-9b95-dacccec779fa
+2025-05-22 20:55:11,983 [INFO] Iniciando inserción de usuario con ID b5ade5f0-e932-49bb-9b95-dacccec779fa
+2025-05-22 20:55:12,041 [ERROR] Error al procesar UserCreatedEvent para usuario ID b5ade5f0-e932-49bb-9b95-dacccec779fa
+MongoDB.Driver.MongoWriteException: A write operation resulted in an error. WriteError: { Category : "DuplicateKey", Code : 11000, Message : "E11000 duplicate key error collection: usuarios_read.usuarios index: _id_ dup key: { _id: "b5ade5f0-e932-49bb-9b95-dacccec779fa" }" }.
+ ---> MongoDB.Driver.MongoBulkWriteException`1[MongoDB.Bson.BsonDocument]: A bulk write operation resulted in one or more errors. WriteErrors: [ { Category : "DuplicateKey", Code : 11000, Message : "E11000 duplicate key error collection: usuarios_read.usuarios index: _id_ dup key: { _id: "b5ade5f0-e932-49bb-9b95-dacccec779fa" }" } ].
+   at MongoDB.Driver.MongoCollectionImpl`1.BulkWriteAsync(IClientSessionHandle session, IEnumerable`1 requests, BulkWriteOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.UsingImplicitSessionAsync[TResult](Func`2 funcAsync, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionBase`1.InsertOneAsync(TDocument document, InsertOneOptions options, Func`3 bulkWriteAsync)
+   --- End of inner exception stack trace ---
+   at MongoDB.Driver.MongoCollectionBase`1.InsertOneAsync(TDocument document, InsertOneOptions options, Func`3 bulkWriteAsync)
+   at Usuarios.Infrastructure.Persistence.Repository.MongoRead.MongoReadUserRepository.AddAsync(BsonDocument user) in C:\Users\anale\OneDrive\Documentos\UCAB\DESA\Proyecto\Usuarios-Microservice\Usuarios.Infrastructure\Persistence\Repository\MongoRead\MongoReadUserRepository.cs:line 30
+   at Usuarios.Infrastructure.Consumer.CreateUserConsumer.Consume(ConsumeContext`1 event) in C:\Users\anale\OneDrive\Documentos\UCAB\DESA\Proyecto\Usuarios-Microservice\Usuarios.Infrastructure\Consumer\CreateUserConsumer.cs:line 35
+2025-05-22 20:55:12,107 [ERROR] Error al insertar usuario con ID b5ade5f0-e932-49bb-9b95-dacccec779fa en la base de datos.
+MongoDB.Driver.MongoWriteException: A write operation resulted in an error. WriteError: { Category : "DuplicateKey", Code : 11000, Message : "E11000 duplicate key error collection: usuarios_read.usuarios index: _id_ dup key: { _id: "b5ade5f0-e932-49bb-9b95-dacccec779fa" }" }.
+ ---> MongoDB.Driver.MongoBulkWriteException`1[MongoDB.Bson.BsonDocument]: A bulk write operation resulted in one or more errors. WriteErrors: [ { Category : "DuplicateKey", Code : 11000, Message : "E11000 duplicate key error collection: usuarios_read.usuarios index: _id_ dup key: { _id: "b5ade5f0-e932-49bb-9b95-dacccec779fa" }" } ].
+   at MongoDB.Driver.MongoCollectionImpl`1.BulkWriteAsync(IClientSessionHandle session, IEnumerable`1 requests, BulkWriteOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.UsingImplicitSessionAsync[TResult](Func`2 funcAsync, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionBase`1.InsertOneAsync(TDocument document, InsertOneOptions options, Func`3 bulkWriteAsync)
+   --- End of inner exception stack trace ---
+   at MongoDB.Driver.MongoCollectionBase`1.InsertOneAsync(TDocument document, InsertOneOptions options, Func`3 bulkWriteAsync)
+   at Usuarios.Infrastructure.Persistence.Repository.MongoRead.MongoReadUserRepository.AddAsync(BsonDocument user) in C:\Users\anale\OneDrive\Documentos\UCAB\DESA\Proyecto\Usuarios-Microservice\Usuarios.Infrastructure\Persistence\Repository\MongoRead\MongoReadUserRepository.cs:line 30
+2025-05-22 20:55:12,171 [ERROR] Error al procesar UserCreatedEvent para usuario ID b5ade5f0-e932-49bb-9b95-dacccec779fa
+MongoDB.Driver.MongoWriteException: A write operation resulted in an error. WriteError: { Category : "DuplicateKey", Code : 11000, Message : "E11000 duplicate key error collection: usuarios_read.usuarios index: _id_ dup key: { _id: "b5ade5f0-e932-49bb-9b95-dacccec779fa" }" }.
+ ---> MongoDB.Driver.MongoBulkWriteException`1[MongoDB.Bson.BsonDocument]: A bulk write operation resulted in one or more errors. WriteErrors: [ { Category : "DuplicateKey", Code : 11000, Message : "E11000 duplicate key error collection: usuarios_read.usuarios index: _id_ dup key: { _id: "b5ade5f0-e932-49bb-9b95-dacccec779fa" }" } ].
+   at MongoDB.Driver.MongoCollectionImpl`1.BulkWriteAsync(IClientSessionHandle session, IEnumerable`1 requests, BulkWriteOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.UsingImplicitSessionAsync[TResult](Func`2 funcAsync, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionBase`1.InsertOneAsync(TDocument document, InsertOneOptions options, Func`3 bulkWriteAsync)
+   --- End of inner exception stack trace ---
+   at MongoDB.Driver.MongoCollectionBase`1.InsertOneAsync(TDocument document, InsertOneOptions options, Func`3 bulkWriteAsync)
+   at Usuarios.Infrastructure.Persistence.Repository.MongoRead.MongoReadUserRepository.AddAsync(BsonDocument user) in C:\Users\anale\OneDrive\Documentos\UCAB\DESA\Proyecto\Usuarios-Microservice\Usuarios.Infrastructure\Persistence\Repository\MongoRead\MongoReadUserRepository.cs:line 30
+   at Usuarios.Infrastructure.Consumer.CreateUserConsumer.Consume(ConsumeContext`1 event) in C:\Users\anale\OneDrive\Documentos\UCAB\DESA\Proyecto\Usuarios-Microservice\Usuarios.Infrastructure\Consumer\CreateUserConsumer.cs:line 35
+2025-05-22 20:55:12,171 [INFO] Evento UserCreated publicado exitosamente en RabbitMQ para usuario ID b5ade5f0-e932-49bb-9b95-dacccec779fa
+2025-05-22 20:55:12,173 [INFO] Evento publicado: Usuario b5ade5f0-e932-49bb-9b95-dacccec779fa creado.
+2025-05-22 20:55:12,173 [INFO] Usuario creado exitosamente con ID: b5ade5f0-e932-49bb-9b95-dacccec779fa
+2025-05-22 20:55:12,325 [INFO] Procesando UserCreatedEvent para usuario ID b5ade5f0-e932-49bb-9b95-dacccec779fa
+2025-05-22 20:55:12,325 [INFO] Iniciando inserción de usuario con ID b5ade5f0-e932-49bb-9b95-dacccec779fa
+2025-05-22 20:55:12,423 [ERROR] Error al insertar usuario con ID b5ade5f0-e932-49bb-9b95-dacccec779fa en la base de datos.
+MongoDB.Driver.MongoWriteException: A write operation resulted in an error. WriteError: { Category : "DuplicateKey", Code : 11000, Message : "E11000 duplicate key error collection: usuarios_read.usuarios index: _id_ dup key: { _id: "b5ade5f0-e932-49bb-9b95-dacccec779fa" }" }.
+ ---> MongoDB.Driver.MongoBulkWriteException`1[MongoDB.Bson.BsonDocument]: A bulk write operation resulted in one or more errors. WriteErrors: [ { Category : "DuplicateKey", Code : 11000, Message : "E11000 duplicate key error collection: usuarios_read.usuarios index: _id_ dup key: { _id: "b5ade5f0-e932-49bb-9b95-dacccec779fa" }" } ].
+   at MongoDB.Driver.MongoCollectionImpl`1.BulkWriteAsync(IClientSessionHandle session, IEnumerable`1 requests, BulkWriteOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.UsingImplicitSessionAsync[TResult](Func`2 funcAsync, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionBase`1.InsertOneAsync(TDocument document, InsertOneOptions options, Func`3 bulkWriteAsync)
+   --- End of inner exception stack trace ---
+   at MongoDB.Driver.MongoCollectionBase`1.InsertOneAsync(TDocument document, InsertOneOptions options, Func`3 bulkWriteAsync)
+   at Usuarios.Infrastructure.Persistence.Repository.MongoRead.MongoReadUserRepository.AddAsync(BsonDocument user) in C:\Users\anale\OneDrive\Documentos\UCAB\DESA\Proyecto\Usuarios-Microservice\Usuarios.Infrastructure\Persistence\Repository\MongoRead\MongoReadUserRepository.cs:line 30
+2025-05-22 20:55:12,491 [ERROR] Error al procesar UserCreatedEvent para usuario ID b5ade5f0-e932-49bb-9b95-dacccec779fa
+MongoDB.Driver.MongoWriteException: A write operation resulted in an error. WriteError: { Category : "DuplicateKey", Code : 11000, Message : "E11000 duplicate key error collection: usuarios_read.usuarios index: _id_ dup key: { _id: "b5ade5f0-e932-49bb-9b95-dacccec779fa" }" }.
+ ---> MongoDB.Driver.MongoBulkWriteException`1[MongoDB.Bson.BsonDocument]: A bulk write operation resulted in one or more errors. WriteErrors: [ { Category : "DuplicateKey", Code : 11000, Message : "E11000 duplicate key error collection: usuarios_read.usuarios index: _id_ dup key: { _id: "b5ade5f0-e932-49bb-9b95-dacccec779fa" }" } ].
+   at MongoDB.Driver.MongoCollectionImpl`1.BulkWriteAsync(IClientSessionHandle session, IEnumerable`1 requests, BulkWriteOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.UsingImplicitSessionAsync[TResult](Func`2 funcAsync, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionBase`1.InsertOneAsync(TDocument document, InsertOneOptions options, Func`3 bulkWriteAsync)
+   --- End of inner exception stack trace ---
+   at MongoDB.Driver.MongoCollectionBase`1.InsertOneAsync(TDocument document, InsertOneOptions options, Func`3 bulkWriteAsync)
+   at Usuarios.Infrastructure.Persistence.Repository.MongoRead.MongoReadUserRepository.AddAsync(BsonDocument user) in C:\Users\anale\OneDrive\Documentos\UCAB\DESA\Proyecto\Usuarios-Microservice\Usuarios.Infrastructure\Persistence\Repository\MongoRead\MongoReadUserRepository.cs:line 30
+   at Usuarios.Infrastructure.Consumer.CreateUserConsumer.Consume(ConsumeContext`1 event) in C:\Users\anale\OneDrive\Documentos\UCAB\DESA\Proyecto\Usuarios-Microservice\Usuarios.Infrastructure\Consumer\CreateUserConsumer.cs:line 35
+2025-05-22 20:55:17,264 [INFO] Procesando UserCreatedEvent para usuario ID b5ade5f0-e932-49bb-9b95-dacccec779fa
+2025-05-22 20:55:17,264 [INFO] Procesando UserCreatedEvent para usuario ID b5ade5f0-e932-49bb-9b95-dacccec779fa
+2025-05-22 20:55:17,264 [INFO] Iniciando inserción de usuario con ID b5ade5f0-e932-49bb-9b95-dacccec779fa
+2025-05-22 20:55:17,264 [INFO] Iniciando inserción de usuario con ID b5ade5f0-e932-49bb-9b95-dacccec779fa
+2025-05-22 20:55:17,372 [ERROR] Error al insertar usuario con ID b5ade5f0-e932-49bb-9b95-dacccec779fa en la base de datos.
+MongoDB.Driver.MongoWriteException: A write operation resulted in an error. WriteError: { Category : "DuplicateKey", Code : 11000, Message : "E11000 duplicate key error collection: usuarios_read.usuarios index: _id_ dup key: { _id: "b5ade5f0-e932-49bb-9b95-dacccec779fa" }" }.
+ ---> MongoDB.Driver.MongoBulkWriteException`1[MongoDB.Bson.BsonDocument]: A bulk write operation resulted in one or more errors. WriteErrors: [ { Category : "DuplicateKey", Code : 11000, Message : "E11000 duplicate key error collection: usuarios_read.usuarios index: _id_ dup key: { _id: "b5ade5f0-e932-49bb-9b95-dacccec779fa" }" } ].
+   at MongoDB.Driver.MongoCollectionImpl`1.BulkWriteAsync(IClientSessionHandle session, IEnumerable`1 requests, BulkWriteOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.UsingImplicitSessionAsync[TResult](Func`2 funcAsync, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionBase`1.InsertOneAsync(TDocument document, InsertOneOptions options, Func`3 bulkWriteAsync)
+   --- End of inner exception stack trace ---
+   at MongoDB.Driver.MongoCollectionBase`1.InsertOneAsync(TDocument document, InsertOneOptions options, Func`3 bulkWriteAsync)
+   at Usuarios.Infrastructure.Persistence.Repository.MongoRead.MongoReadUserRepository.AddAsync(BsonDocument user) in C:\Users\anale\OneDrive\Documentos\UCAB\DESA\Proyecto\Usuarios-Microservice\Usuarios.Infrastructure\Persistence\Repository\MongoRead\MongoReadUserRepository.cs:line 30
+2025-05-22 20:55:17,433 [ERROR] Error al procesar UserCreatedEvent para usuario ID b5ade5f0-e932-49bb-9b95-dacccec779fa
+MongoDB.Driver.MongoWriteException: A write operation resulted in an error. WriteError: { Category : "DuplicateKey", Code : 11000, Message : "E11000 duplicate key error collection: usuarios_read.usuarios index: _id_ dup key: { _id: "b5ade5f0-e932-49bb-9b95-dacccec779fa" }" }.
+ ---> MongoDB.Driver.MongoBulkWriteException`1[MongoDB.Bson.BsonDocument]: A bulk write operation resulted in one or more errors. WriteErrors: [ { Category : "DuplicateKey", Code : 11000, Message : "E11000 duplicate key error collection: usuarios_read.usuarios index: _id_ dup key: { _id: "b5ade5f0-e932-49bb-9b95-dacccec779fa" }" } ].
+   at MongoDB.Driver.MongoCollectionImpl`1.BulkWriteAsync(IClientSessionHandle session, IEnumerable`1 requests, BulkWriteOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.UsingImplicitSessionAsync[TResult](Func`2 funcAsync, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionBase`1.InsertOneAsync(TDocument document, InsertOneOptions options, Func`3 bulkWriteAsync)
+   --- End of inner exception stack trace ---
+   at MongoDB.Driver.MongoCollectionBase`1.InsertOneAsync(TDocument document, InsertOneOptions options, Func`3 bulkWriteAsync)
+   at Usuarios.Infrastructure.Persistence.Repository.MongoRead.MongoReadUserRepository.AddAsync(BsonDocument user) in C:\Users\anale\OneDrive\Documentos\UCAB\DESA\Proyecto\Usuarios-Microservice\Usuarios.Infrastructure\Persistence\Repository\MongoRead\MongoReadUserRepository.cs:line 30
+   at Usuarios.Infrastructure.Consumer.CreateUserConsumer.Consume(ConsumeContext`1 event) in C:\Users\anale\OneDrive\Documentos\UCAB\DESA\Proyecto\Usuarios-Microservice\Usuarios.Infrastructure\Consumer\CreateUserConsumer.cs:line 35
+2025-05-22 20:55:17,536 [INFO] Procesando UserCreatedEvent para usuario ID b5ade5f0-e932-49bb-9b95-dacccec779fa
+2025-05-22 20:55:17,536 [INFO] Iniciando inserción de usuario con ID b5ade5f0-e932-49bb-9b95-dacccec779fa
+2025-05-22 20:55:17,631 [ERROR] Error al insertar usuario con ID b5ade5f0-e932-49bb-9b95-dacccec779fa en la base de datos.
+MongoDB.Driver.MongoWriteException: A write operation resulted in an error. WriteError: { Category : "DuplicateKey", Code : 11000, Message : "E11000 duplicate key error collection: usuarios_read.usuarios index: _id_ dup key: { _id: "b5ade5f0-e932-49bb-9b95-dacccec779fa" }" }.
+ ---> MongoDB.Driver.MongoBulkWriteException`1[MongoDB.Bson.BsonDocument]: A bulk write operation resulted in one or more errors. WriteErrors: [ { Category : "DuplicateKey", Code : 11000, Message : "E11000 duplicate key error collection: usuarios_read.usuarios index: _id_ dup key: { _id: "b5ade5f0-e932-49bb-9b95-dacccec779fa" }" } ].
+   at MongoDB.Driver.MongoCollectionImpl`1.BulkWriteAsync(IClientSessionHandle session, IEnumerable`1 requests, BulkWriteOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.UsingImplicitSessionAsync[TResult](Func`2 funcAsync, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionBase`1.InsertOneAsync(TDocument document, InsertOneOptions options, Func`3 bulkWriteAsync)
+   --- End of inner exception stack trace ---
+   at MongoDB.Driver.MongoCollectionBase`1.InsertOneAsync(TDocument document, InsertOneOptions options, Func`3 bulkWriteAsync)
+   at Usuarios.Infrastructure.Persistence.Repository.MongoRead.MongoReadUserRepository.AddAsync(BsonDocument user) in C:\Users\anale\OneDrive\Documentos\UCAB\DESA\Proyecto\Usuarios-Microservice\Usuarios.Infrastructure\Persistence\Repository\MongoRead\MongoReadUserRepository.cs:line 30
+2025-05-22 20:55:17,696 [ERROR] Error al procesar UserCreatedEvent para usuario ID b5ade5f0-e932-49bb-9b95-dacccec779fa
+MongoDB.Driver.MongoWriteException: A write operation resulted in an error. WriteError: { Category : "DuplicateKey", Code : 11000, Message : "E11000 duplicate key error collection: usuarios_read.usuarios index: _id_ dup key: { _id: "b5ade5f0-e932-49bb-9b95-dacccec779fa" }" }.
+ ---> MongoDB.Driver.MongoBulkWriteException`1[MongoDB.Bson.BsonDocument]: A bulk write operation resulted in one or more errors. WriteErrors: [ { Category : "DuplicateKey", Code : 11000, Message : "E11000 duplicate key error collection: usuarios_read.usuarios index: _id_ dup key: { _id: "b5ade5f0-e932-49bb-9b95-dacccec779fa" }" } ].
+   at MongoDB.Driver.MongoCollectionImpl`1.BulkWriteAsync(IClientSessionHandle session, IEnumerable`1 requests, BulkWriteOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.UsingImplicitSessionAsync[TResult](Func`2 funcAsync, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionBase`1.InsertOneAsync(TDocument document, InsertOneOptions options, Func`3 bulkWriteAsync)
+   --- End of inner exception stack trace ---
+   at MongoDB.Driver.MongoCollectionBase`1.InsertOneAsync(TDocument document, InsertOneOptions options, Func`3 bulkWriteAsync)
+   at Usuarios.Infrastructure.Persistence.Repository.MongoRead.MongoReadUserRepository.AddAsync(BsonDocument user) in C:\Users\anale\OneDrive\Documentos\UCAB\DESA\Proyecto\Usuarios-Microservice\Usuarios.Infrastructure\Persistence\Repository\MongoRead\MongoReadUserRepository.cs:line 30
+   at Usuarios.Infrastructure.Consumer.CreateUserConsumer.Consume(ConsumeContext`1 event) in C:\Users\anale\OneDrive\Documentos\UCAB\DESA\Proyecto\Usuarios-Microservice\Usuarios.Infrastructure\Consumer\CreateUserConsumer.cs:line 35
+2025-05-22 20:55:17,830 [ERROR] Error al insertar usuario con ID b5ade5f0-e932-49bb-9b95-dacccec779fa en la base de datos.
+MongoDB.Driver.MongoWriteException: A write operation resulted in an error. WriteError: { Category : "DuplicateKey", Code : 11000, Message : "E11000 duplicate key error collection: usuarios_read.usuarios index: _id_ dup key: { _id: "b5ade5f0-e932-49bb-9b95-dacccec779fa" }" }.
+ ---> MongoDB.Driver.MongoBulkWriteException`1[MongoDB.Bson.BsonDocument]: A bulk write operation resulted in one or more errors. WriteErrors: [ { Category : "DuplicateKey", Code : 11000, Message : "E11000 duplicate key error collection: usuarios_read.usuarios index: _id_ dup key: { _id: "b5ade5f0-e932-49bb-9b95-dacccec779fa" }" } ].
+   at MongoDB.Driver.MongoCollectionImpl`1.BulkWriteAsync(IClientSessionHandle session, IEnumerable`1 requests, BulkWriteOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.UsingImplicitSessionAsync[TResult](Func`2 funcAsync, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionBase`1.InsertOneAsync(TDocument document, InsertOneOptions options, Func`3 bulkWriteAsync)
+   --- End of inner exception stack trace ---
+   at MongoDB.Driver.MongoCollectionBase`1.InsertOneAsync(TDocument document, InsertOneOptions options, Func`3 bulkWriteAsync)
+   at Usuarios.Infrastructure.Persistence.Repository.MongoRead.MongoReadUserRepository.AddAsync(BsonDocument user) in C:\Users\anale\OneDrive\Documentos\UCAB\DESA\Proyecto\Usuarios-Microservice\Usuarios.Infrastructure\Persistence\Repository\MongoRead\MongoReadUserRepository.cs:line 30
+2025-05-22 20:55:17,898 [ERROR] Error al procesar UserCreatedEvent para usuario ID b5ade5f0-e932-49bb-9b95-dacccec779fa
+MongoDB.Driver.MongoWriteException: A write operation resulted in an error. WriteError: { Category : "DuplicateKey", Code : 11000, Message : "E11000 duplicate key error collection: usuarios_read.usuarios index: _id_ dup key: { _id: "b5ade5f0-e932-49bb-9b95-dacccec779fa" }" }.
+ ---> MongoDB.Driver.MongoBulkWriteException`1[MongoDB.Bson.BsonDocument]: A bulk write operation resulted in one or more errors. WriteErrors: [ { Category : "DuplicateKey", Code : 11000, Message : "E11000 duplicate key error collection: usuarios_read.usuarios index: _id_ dup key: { _id: "b5ade5f0-e932-49bb-9b95-dacccec779fa" }" } ].
+   at MongoDB.Driver.MongoCollectionImpl`1.BulkWriteAsync(IClientSessionHandle session, IEnumerable`1 requests, BulkWriteOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.UsingImplicitSessionAsync[TResult](Func`2 funcAsync, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionBase`1.InsertOneAsync(TDocument document, InsertOneOptions options, Func`3 bulkWriteAsync)
+   --- End of inner exception stack trace ---
+   at MongoDB.Driver.MongoCollectionBase`1.InsertOneAsync(TDocument document, InsertOneOptions options, Func`3 bulkWriteAsync)
+   at Usuarios.Infrastructure.Persistence.Repository.MongoRead.MongoReadUserRepository.AddAsync(BsonDocument user) in C:\Users\anale\OneDrive\Documentos\UCAB\DESA\Proyecto\Usuarios-Microservice\Usuarios.Infrastructure\Persistence\Repository\MongoRead\MongoReadUserRepository.cs:line 30
+   at Usuarios.Infrastructure.Consumer.CreateUserConsumer.Consume(ConsumeContext`1 event) in C:\Users\anale\OneDrive\Documentos\UCAB\DESA\Proyecto\Usuarios-Microservice\Usuarios.Infrastructure\Consumer\CreateUserConsumer.cs:line 35
+2025-05-22 20:55:22,479 [INFO] Procesando UserCreatedEvent para usuario ID b5ade5f0-e932-49bb-9b95-dacccec779fa
+2025-05-22 20:55:22,479 [INFO] Iniciando inserción de usuario con ID b5ade5f0-e932-49bb-9b95-dacccec779fa
+2025-05-22 20:55:22,581 [ERROR] Error al insertar usuario con ID b5ade5f0-e932-49bb-9b95-dacccec779fa en la base de datos.
+MongoDB.Driver.MongoWriteException: A write operation resulted in an error. WriteError: { Category : "DuplicateKey", Code : 11000, Message : "E11000 duplicate key error collection: usuarios_read.usuarios index: _id_ dup key: { _id: "b5ade5f0-e932-49bb-9b95-dacccec779fa" }" }.
+ ---> MongoDB.Driver.MongoBulkWriteException`1[MongoDB.Bson.BsonDocument]: A bulk write operation resulted in one or more errors. WriteErrors: [ { Category : "DuplicateKey", Code : 11000, Message : "E11000 duplicate key error collection: usuarios_read.usuarios index: _id_ dup key: { _id: "b5ade5f0-e932-49bb-9b95-dacccec779fa" }" } ].
+   at MongoDB.Driver.MongoCollectionImpl`1.BulkWriteAsync(IClientSessionHandle session, IEnumerable`1 requests, BulkWriteOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.UsingImplicitSessionAsync[TResult](Func`2 funcAsync, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionBase`1.InsertOneAsync(TDocument document, InsertOneOptions options, Func`3 bulkWriteAsync)
+   --- End of inner exception stack trace ---
+   at MongoDB.Driver.MongoCollectionBase`1.InsertOneAsync(TDocument document, InsertOneOptions options, Func`3 bulkWriteAsync)
+   at Usuarios.Infrastructure.Persistence.Repository.MongoRead.MongoReadUserRepository.AddAsync(BsonDocument user) in C:\Users\anale\OneDrive\Documentos\UCAB\DESA\Proyecto\Usuarios-Microservice\Usuarios.Infrastructure\Persistence\Repository\MongoRead\MongoReadUserRepository.cs:line 30
+2025-05-22 20:55:22,641 [ERROR] Error al procesar UserCreatedEvent para usuario ID b5ade5f0-e932-49bb-9b95-dacccec779fa
+MongoDB.Driver.MongoWriteException: A write operation resulted in an error. WriteError: { Category : "DuplicateKey", Code : 11000, Message : "E11000 duplicate key error collection: usuarios_read.usuarios index: _id_ dup key: { _id: "b5ade5f0-e932-49bb-9b95-dacccec779fa" }" }.
+ ---> MongoDB.Driver.MongoBulkWriteException`1[MongoDB.Bson.BsonDocument]: A bulk write operation resulted in one or more errors. WriteErrors: [ { Category : "DuplicateKey", Code : 11000, Message : "E11000 duplicate key error collection: usuarios_read.usuarios index: _id_ dup key: { _id: "b5ade5f0-e932-49bb-9b95-dacccec779fa" }" } ].
+   at MongoDB.Driver.MongoCollectionImpl`1.BulkWriteAsync(IClientSessionHandle session, IEnumerable`1 requests, BulkWriteOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.UsingImplicitSessionAsync[TResult](Func`2 funcAsync, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionBase`1.InsertOneAsync(TDocument document, InsertOneOptions options, Func`3 bulkWriteAsync)
+   --- End of inner exception stack trace ---
+   at MongoDB.Driver.MongoCollectionBase`1.InsertOneAsync(TDocument document, InsertOneOptions options, Func`3 bulkWriteAsync)
+   at Usuarios.Infrastructure.Persistence.Repository.MongoRead.MongoReadUserRepository.AddAsync(BsonDocument user) in C:\Users\anale\OneDrive\Documentos\UCAB\DESA\Proyecto\Usuarios-Microservice\Usuarios.Infrastructure\Persistence\Repository\MongoRead\MongoReadUserRepository.cs:line 30
+   at Usuarios.Infrastructure.Consumer.CreateUserConsumer.Consume(ConsumeContext`1 event) in C:\Users\anale\OneDrive\Documentos\UCAB\DESA\Proyecto\Usuarios-Microservice\Usuarios.Infrastructure\Consumer\CreateUserConsumer.cs:line 35
+2025-05-22 20:55:22,741 [INFO] Procesando UserCreatedEvent para usuario ID b5ade5f0-e932-49bb-9b95-dacccec779fa
+2025-05-22 20:55:22,741 [INFO] Iniciando inserción de usuario con ID b5ade5f0-e932-49bb-9b95-dacccec779fa
+2025-05-22 20:55:22,847 [ERROR] Error al insertar usuario con ID b5ade5f0-e932-49bb-9b95-dacccec779fa en la base de datos.
+MongoDB.Driver.MongoWriteException: A write operation resulted in an error. WriteError: { Category : "DuplicateKey", Code : 11000, Message : "E11000 duplicate key error collection: usuarios_read.usuarios index: _id_ dup key: { _id: "b5ade5f0-e932-49bb-9b95-dacccec779fa" }" }.
+ ---> MongoDB.Driver.MongoBulkWriteException`1[MongoDB.Bson.BsonDocument]: A bulk write operation resulted in one or more errors. WriteErrors: [ { Category : "DuplicateKey", Code : 11000, Message : "E11000 duplicate key error collection: usuarios_read.usuarios index: _id_ dup key: { _id: "b5ade5f0-e932-49bb-9b95-dacccec779fa" }" } ].
+   at MongoDB.Driver.MongoCollectionImpl`1.BulkWriteAsync(IClientSessionHandle session, IEnumerable`1 requests, BulkWriteOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.UsingImplicitSessionAsync[TResult](Func`2 funcAsync, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionBase`1.InsertOneAsync(TDocument document, InsertOneOptions options, Func`3 bulkWriteAsync)
+   --- End of inner exception stack trace ---
+   at MongoDB.Driver.MongoCollectionBase`1.InsertOneAsync(TDocument document, InsertOneOptions options, Func`3 bulkWriteAsync)
+   at Usuarios.Infrastructure.Persistence.Repository.MongoRead.MongoReadUserRepository.AddAsync(BsonDocument user) in C:\Users\anale\OneDrive\Documentos\UCAB\DESA\Proyecto\Usuarios-Microservice\Usuarios.Infrastructure\Persistence\Repository\MongoRead\MongoReadUserRepository.cs:line 30
+2025-05-22 20:55:22,916 [ERROR] Error al procesar UserCreatedEvent para usuario ID b5ade5f0-e932-49bb-9b95-dacccec779fa
+MongoDB.Driver.MongoWriteException: A write operation resulted in an error. WriteError: { Category : "DuplicateKey", Code : 11000, Message : "E11000 duplicate key error collection: usuarios_read.usuarios index: _id_ dup key: { _id: "b5ade5f0-e932-49bb-9b95-dacccec779fa" }" }.
+ ---> MongoDB.Driver.MongoBulkWriteException`1[MongoDB.Bson.BsonDocument]: A bulk write operation resulted in one or more errors. WriteErrors: [ { Category : "DuplicateKey", Code : 11000, Message : "E11000 duplicate key error collection: usuarios_read.usuarios index: _id_ dup key: { _id: "b5ade5f0-e932-49bb-9b95-dacccec779fa" }" } ].
+   at MongoDB.Driver.MongoCollectionImpl`1.BulkWriteAsync(IClientSessionHandle session, IEnumerable`1 requests, BulkWriteOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.UsingImplicitSessionAsync[TResult](Func`2 funcAsync, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionBase`1.InsertOneAsync(TDocument document, InsertOneOptions options, Func`3 bulkWriteAsync)
+   --- End of inner exception stack trace ---
+   at MongoDB.Driver.MongoCollectionBase`1.InsertOneAsync(TDocument document, InsertOneOptions options, Func`3 bulkWriteAsync)
+   at Usuarios.Infrastructure.Persistence.Repository.MongoRead.MongoReadUserRepository.AddAsync(BsonDocument user) in C:\Users\anale\OneDrive\Documentos\UCAB\DESA\Proyecto\Usuarios-Microservice\Usuarios.Infrastructure\Persistence\Repository\MongoRead\MongoReadUserRepository.cs:line 30
+   at Usuarios.Infrastructure.Consumer.CreateUserConsumer.Consume(ConsumeContext`1 event) in C:\Users\anale\OneDrive\Documentos\UCAB\DESA\Proyecto\Usuarios-Microservice\Usuarios.Infrastructure\Consumer\CreateUserConsumer.cs:line 35
+2025-05-22 20:55:22,950 [INFO] Procesando UserCreatedEvent para usuario ID b5ade5f0-e932-49bb-9b95-dacccec779fa
+2025-05-22 20:55:22,950 [INFO] Iniciando inserción de usuario con ID b5ade5f0-e932-49bb-9b95-dacccec779fa
+2025-05-22 20:55:23,062 [ERROR] Error al insertar usuario con ID b5ade5f0-e932-49bb-9b95-dacccec779fa en la base de datos.
+MongoDB.Driver.MongoWriteException: A write operation resulted in an error. WriteError: { Category : "DuplicateKey", Code : 11000, Message : "E11000 duplicate key error collection: usuarios_read.usuarios index: _id_ dup key: { _id: "b5ade5f0-e932-49bb-9b95-dacccec779fa" }" }.
+ ---> MongoDB.Driver.MongoBulkWriteException`1[MongoDB.Bson.BsonDocument]: A bulk write operation resulted in one or more errors. WriteErrors: [ { Category : "DuplicateKey", Code : 11000, Message : "E11000 duplicate key error collection: usuarios_read.usuarios index: _id_ dup key: { _id: "b5ade5f0-e932-49bb-9b95-dacccec779fa" }" } ].
+   at MongoDB.Driver.MongoCollectionImpl`1.BulkWriteAsync(IClientSessionHandle session, IEnumerable`1 requests, BulkWriteOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.UsingImplicitSessionAsync[TResult](Func`2 funcAsync, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionBase`1.InsertOneAsync(TDocument document, InsertOneOptions options, Func`3 bulkWriteAsync)
+   --- End of inner exception stack trace ---
+   at MongoDB.Driver.MongoCollectionBase`1.InsertOneAsync(TDocument document, InsertOneOptions options, Func`3 bulkWriteAsync)
+   at Usuarios.Infrastructure.Persistence.Repository.MongoRead.MongoReadUserRepository.AddAsync(BsonDocument user) in C:\Users\anale\OneDrive\Documentos\UCAB\DESA\Proyecto\Usuarios-Microservice\Usuarios.Infrastructure\Persistence\Repository\MongoRead\MongoReadUserRepository.cs:line 30
+2025-05-22 20:55:23,127 [ERROR] Error al procesar UserCreatedEvent para usuario ID b5ade5f0-e932-49bb-9b95-dacccec779fa
+MongoDB.Driver.MongoWriteException: A write operation resulted in an error. WriteError: { Category : "DuplicateKey", Code : 11000, Message : "E11000 duplicate key error collection: usuarios_read.usuarios index: _id_ dup key: { _id: "b5ade5f0-e932-49bb-9b95-dacccec779fa" }" }.
+ ---> MongoDB.Driver.MongoBulkWriteException`1[MongoDB.Bson.BsonDocument]: A bulk write operation resulted in one or more errors. WriteErrors: [ { Category : "DuplicateKey", Code : 11000, Message : "E11000 duplicate key error collection: usuarios_read.usuarios index: _id_ dup key: { _id: "b5ade5f0-e932-49bb-9b95-dacccec779fa" }" } ].
+   at MongoDB.Driver.MongoCollectionImpl`1.BulkWriteAsync(IClientSessionHandle session, IEnumerable`1 requests, BulkWriteOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.UsingImplicitSessionAsync[TResult](Func`2 funcAsync, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionBase`1.InsertOneAsync(TDocument document, InsertOneOptions options, Func`3 bulkWriteAsync)
+   --- End of inner exception stack trace ---
+   at MongoDB.Driver.MongoCollectionBase`1.InsertOneAsync(TDocument document, InsertOneOptions options, Func`3 bulkWriteAsync)
+   at Usuarios.Infrastructure.Persistence.Repository.MongoRead.MongoReadUserRepository.AddAsync(BsonDocument user) in C:\Users\anale\OneDrive\Documentos\UCAB\DESA\Proyecto\Usuarios-Microservice\Usuarios.Infrastructure\Persistence\Repository\MongoRead\MongoReadUserRepository.cs:line 30
+   at Usuarios.Infrastructure.Consumer.CreateUserConsumer.Consume(ConsumeContext`1 event) in C:\Users\anale\OneDrive\Documentos\UCAB\DESA\Proyecto\Usuarios-Microservice\Usuarios.Infrastructure\Consumer\CreateUserConsumer.cs:line 35
+2025-05-22 20:55:27,679 [INFO] Procesando UserCreatedEvent para usuario ID b5ade5f0-e932-49bb-9b95-dacccec779fa
+2025-05-22 20:55:27,679 [INFO] Iniciando inserción de usuario con ID b5ade5f0-e932-49bb-9b95-dacccec779fa
+2025-05-22 20:55:27,778 [ERROR] Error al insertar usuario con ID b5ade5f0-e932-49bb-9b95-dacccec779fa en la base de datos.
+MongoDB.Driver.MongoWriteException: A write operation resulted in an error. WriteError: { Category : "DuplicateKey", Code : 11000, Message : "E11000 duplicate key error collection: usuarios_read.usuarios index: _id_ dup key: { _id: "b5ade5f0-e932-49bb-9b95-dacccec779fa" }" }.
+ ---> MongoDB.Driver.MongoBulkWriteException`1[MongoDB.Bson.BsonDocument]: A bulk write operation resulted in one or more errors. WriteErrors: [ { Category : "DuplicateKey", Code : 11000, Message : "E11000 duplicate key error collection: usuarios_read.usuarios index: _id_ dup key: { _id: "b5ade5f0-e932-49bb-9b95-dacccec779fa" }" } ].
+   at MongoDB.Driver.MongoCollectionImpl`1.BulkWriteAsync(IClientSessionHandle session, IEnumerable`1 requests, BulkWriteOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.UsingImplicitSessionAsync[TResult](Func`2 funcAsync, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionBase`1.InsertOneAsync(TDocument document, InsertOneOptions options, Func`3 bulkWriteAsync)
+   --- End of inner exception stack trace ---
+   at MongoDB.Driver.MongoCollectionBase`1.InsertOneAsync(TDocument document, InsertOneOptions options, Func`3 bulkWriteAsync)
+   at Usuarios.Infrastructure.Persistence.Repository.MongoRead.MongoReadUserRepository.AddAsync(BsonDocument user) in C:\Users\anale\OneDrive\Documentos\UCAB\DESA\Proyecto\Usuarios-Microservice\Usuarios.Infrastructure\Persistence\Repository\MongoRead\MongoReadUserRepository.cs:line 30
+2025-05-22 20:55:27,841 [ERROR] Error al procesar UserCreatedEvent para usuario ID b5ade5f0-e932-49bb-9b95-dacccec779fa
+MongoDB.Driver.MongoWriteException: A write operation resulted in an error. WriteError: { Category : "DuplicateKey", Code : 11000, Message : "E11000 duplicate key error collection: usuarios_read.usuarios index: _id_ dup key: { _id: "b5ade5f0-e932-49bb-9b95-dacccec779fa" }" }.
+ ---> MongoDB.Driver.MongoBulkWriteException`1[MongoDB.Bson.BsonDocument]: A bulk write operation resulted in one or more errors. WriteErrors: [ { Category : "DuplicateKey", Code : 11000, Message : "E11000 duplicate key error collection: usuarios_read.usuarios index: _id_ dup key: { _id: "b5ade5f0-e932-49bb-9b95-dacccec779fa" }" } ].
+   at MongoDB.Driver.MongoCollectionImpl`1.BulkWriteAsync(IClientSessionHandle session, IEnumerable`1 requests, BulkWriteOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.UsingImplicitSessionAsync[TResult](Func`2 funcAsync, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionBase`1.InsertOneAsync(TDocument document, InsertOneOptions options, Func`3 bulkWriteAsync)
+   --- End of inner exception stack trace ---
+   at MongoDB.Driver.MongoCollectionBase`1.InsertOneAsync(TDocument document, InsertOneOptions options, Func`3 bulkWriteAsync)
+   at Usuarios.Infrastructure.Persistence.Repository.MongoRead.MongoReadUserRepository.AddAsync(BsonDocument user) in C:\Users\anale\OneDrive\Documentos\UCAB\DESA\Proyecto\Usuarios-Microservice\Usuarios.Infrastructure\Persistence\Repository\MongoRead\MongoReadUserRepository.cs:line 30
+   at Usuarios.Infrastructure.Consumer.CreateUserConsumer.Consume(ConsumeContext`1 event) in C:\Users\anale\OneDrive\Documentos\UCAB\DESA\Proyecto\Usuarios-Microservice\Usuarios.Infrastructure\Consumer\CreateUserConsumer.cs:line 35
+2025-05-22 20:55:27,962 [INFO] Procesando UserCreatedEvent para usuario ID b5ade5f0-e932-49bb-9b95-dacccec779fa
+2025-05-22 20:55:27,962 [INFO] Iniciando inserción de usuario con ID b5ade5f0-e932-49bb-9b95-dacccec779fa
+2025-05-22 20:55:28,060 [ERROR] Error al insertar usuario con ID b5ade5f0-e932-49bb-9b95-dacccec779fa en la base de datos.
+MongoDB.Driver.MongoWriteException: A write operation resulted in an error. WriteError: { Category : "DuplicateKey", Code : 11000, Message : "E11000 duplicate key error collection: usuarios_read.usuarios index: _id_ dup key: { _id: "b5ade5f0-e932-49bb-9b95-dacccec779fa" }" }.
+ ---> MongoDB.Driver.MongoBulkWriteException`1[MongoDB.Bson.BsonDocument]: A bulk write operation resulted in one or more errors. WriteErrors: [ { Category : "DuplicateKey", Code : 11000, Message : "E11000 duplicate key error collection: usuarios_read.usuarios index: _id_ dup key: { _id: "b5ade5f0-e932-49bb-9b95-dacccec779fa" }" } ].
+   at MongoDB.Driver.MongoCollectionImpl`1.BulkWriteAsync(IClientSessionHandle session, IEnumerable`1 requests, BulkWriteOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.UsingImplicitSessionAsync[TResult](Func`2 funcAsync, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionBase`1.InsertOneAsync(TDocument document, InsertOneOptions options, Func`3 bulkWriteAsync)
+   --- End of inner exception stack trace ---
+   at MongoDB.Driver.MongoCollectionBase`1.InsertOneAsync(TDocument document, InsertOneOptions options, Func`3 bulkWriteAsync)
+   at Usuarios.Infrastructure.Persistence.Repository.MongoRead.MongoReadUserRepository.AddAsync(BsonDocument user) in C:\Users\anale\OneDrive\Documentos\UCAB\DESA\Proyecto\Usuarios-Microservice\Usuarios.Infrastructure\Persistence\Repository\MongoRead\MongoReadUserRepository.cs:line 30
+2025-05-22 20:55:28,128 [ERROR] Error al procesar UserCreatedEvent para usuario ID b5ade5f0-e932-49bb-9b95-dacccec779fa
+MongoDB.Driver.MongoWriteException: A write operation resulted in an error. WriteError: { Category : "DuplicateKey", Code : 11000, Message : "E11000 duplicate key error collection: usuarios_read.usuarios index: _id_ dup key: { _id: "b5ade5f0-e932-49bb-9b95-dacccec779fa" }" }.
+ ---> MongoDB.Driver.MongoBulkWriteException`1[MongoDB.Bson.BsonDocument]: A bulk write operation resulted in one or more errors. WriteErrors: [ { Category : "DuplicateKey", Code : 11000, Message : "E11000 duplicate key error collection: usuarios_read.usuarios index: _id_ dup key: { _id: "b5ade5f0-e932-49bb-9b95-dacccec779fa" }" } ].
+   at MongoDB.Driver.MongoCollectionImpl`1.BulkWriteAsync(IClientSessionHandle session, IEnumerable`1 requests, BulkWriteOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.UsingImplicitSessionAsync[TResult](Func`2 funcAsync, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionBase`1.InsertOneAsync(TDocument document, InsertOneOptions options, Func`3 bulkWriteAsync)
+   --- End of inner exception stack trace ---
+   at MongoDB.Driver.MongoCollectionBase`1.InsertOneAsync(TDocument document, InsertOneOptions options, Func`3 bulkWriteAsync)
+   at Usuarios.Infrastructure.Persistence.Repository.MongoRead.MongoReadUserRepository.AddAsync(BsonDocument user) in C:\Users\anale\OneDrive\Documentos\UCAB\DESA\Proyecto\Usuarios-Microservice\Usuarios.Infrastructure\Persistence\Repository\MongoRead\MongoReadUserRepository.cs:line 30
+   at Usuarios.Infrastructure.Consumer.CreateUserConsumer.Consume(ConsumeContext`1 event) in C:\Users\anale\OneDrive\Documentos\UCAB\DESA\Proyecto\Usuarios-Microservice\Usuarios.Infrastructure\Consumer\CreateUserConsumer.cs:line 35
+2025-05-22 20:55:28,170 [INFO] Procesando UserCreatedEvent para usuario ID b5ade5f0-e932-49bb-9b95-dacccec779fa
+2025-05-22 20:55:28,170 [INFO] Iniciando inserción de usuario con ID b5ade5f0-e932-49bb-9b95-dacccec779fa
+2025-05-22 20:55:28,266 [ERROR] Error al insertar usuario con ID b5ade5f0-e932-49bb-9b95-dacccec779fa en la base de datos.
+MongoDB.Driver.MongoWriteException: A write operation resulted in an error. WriteError: { Category : "DuplicateKey", Code : 11000, Message : "E11000 duplicate key error collection: usuarios_read.usuarios index: _id_ dup key: { _id: "b5ade5f0-e932-49bb-9b95-dacccec779fa" }" }.
+ ---> MongoDB.Driver.MongoBulkWriteException`1[MongoDB.Bson.BsonDocument]: A bulk write operation resulted in one or more errors. WriteErrors: [ { Category : "DuplicateKey", Code : 11000, Message : "E11000 duplicate key error collection: usuarios_read.usuarios index: _id_ dup key: { _id: "b5ade5f0-e932-49bb-9b95-dacccec779fa" }" } ].
+   at MongoDB.Driver.MongoCollectionImpl`1.BulkWriteAsync(IClientSessionHandle session, IEnumerable`1 requests, BulkWriteOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.UsingImplicitSessionAsync[TResult](Func`2 funcAsync, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionBase`1.InsertOneAsync(TDocument document, InsertOneOptions options, Func`3 bulkWriteAsync)
+   --- End of inner exception stack trace ---
+   at MongoDB.Driver.MongoCollectionBase`1.InsertOneAsync(TDocument document, InsertOneOptions options, Func`3 bulkWriteAsync)
+   at Usuarios.Infrastructure.Persistence.Repository.MongoRead.MongoReadUserRepository.AddAsync(BsonDocument user) in C:\Users\anale\OneDrive\Documentos\UCAB\DESA\Proyecto\Usuarios-Microservice\Usuarios.Infrastructure\Persistence\Repository\MongoRead\MongoReadUserRepository.cs:line 30
+2025-05-22 20:55:28,326 [ERROR] Error al procesar UserCreatedEvent para usuario ID b5ade5f0-e932-49bb-9b95-dacccec779fa
+MongoDB.Driver.MongoWriteException: A write operation resulted in an error. WriteError: { Category : "DuplicateKey", Code : 11000, Message : "E11000 duplicate key error collection: usuarios_read.usuarios index: _id_ dup key: { _id: "b5ade5f0-e932-49bb-9b95-dacccec779fa" }" }.
+ ---> MongoDB.Driver.MongoBulkWriteException`1[MongoDB.Bson.BsonDocument]: A bulk write operation resulted in one or more errors. WriteErrors: [ { Category : "DuplicateKey", Code : 11000, Message : "E11000 duplicate key error collection: usuarios_read.usuarios index: _id_ dup key: { _id: "b5ade5f0-e932-49bb-9b95-dacccec779fa" }" } ].
+   at MongoDB.Driver.MongoCollectionImpl`1.BulkWriteAsync(IClientSessionHandle session, IEnumerable`1 requests, BulkWriteOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.UsingImplicitSessionAsync[TResult](Func`2 funcAsync, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionBase`1.InsertOneAsync(TDocument document, InsertOneOptions options, Func`3 bulkWriteAsync)
+   --- End of inner exception stack trace ---
+   at MongoDB.Driver.MongoCollectionBase`1.InsertOneAsync(TDocument document, InsertOneOptions options, Func`3 bulkWriteAsync)
+   at Usuarios.Infrastructure.Persistence.Repository.MongoRead.MongoReadUserRepository.AddAsync(BsonDocument user) in C:\Users\anale\OneDrive\Documentos\UCAB\DESA\Proyecto\Usuarios-Microservice\Usuarios.Infrastructure\Persistence\Repository\MongoRead\MongoReadUserRepository.cs:line 30
+   at Usuarios.Infrastructure.Consumer.CreateUserConsumer.Consume(ConsumeContext`1 event) in C:\Users\anale\OneDrive\Documentos\UCAB\DESA\Proyecto\Usuarios-Microservice\Usuarios.Infrastructure\Consumer\CreateUserConsumer.cs:line 35
+2025-05-22 20:57:39,534 [INFO] Iniciando solicitud PATCH /api/users/update/b5ade5f0-e932-49bb-9b95-dacccec779fa
+2025-05-22 20:57:39,537 [INFO] Procesando comando UpdateUser para el usuario b5ade5f0-e932-49bb-9b95-dacccec779fa
+2025-05-22 20:57:39,538 [INFO] Iniciando búsqueda de usuario con ID b5ade5f0-e932-49bb-9b95-dacccec779fa
+2025-05-22 20:57:39,603 [INFO] Usuario con ID b5ade5f0-e932-49bb-9b95-dacccec779fa obtenido exitosamente.
+2025-05-22 20:57:39,604 [INFO] Ejecutando actualización en MongoWriteUserRepository para el usuario b5ade5f0-e932-49bb-9b95-dacccec779fa
+2025-05-22 20:57:39,605 [INFO] Iniciando actualización de usuario con ID b5ade5f0-e932-49bb-9b95-dacccec779fa
+2025-05-22 20:57:39,714 [INFO] Usuario con ID b5ade5f0-e932-49bb-9b95-dacccec779fa actualizado exitosamente. Documentos modificados: 1
+2025-05-22 20:57:39,714 [INFO] Usuario b5ade5f0-e932-49bb-9b95-dacccec779fa actualizado correctamente.
+2025-05-22 20:57:40,871 [INFO] Evento publicado: Usuario b5ade5f0-e932-49bb-9b95-dacccec779fa actualizado.
+2025-05-22 20:57:41,036 [INFO] Procesando UserUpdatedEvent para usuario ID b5ade5f0-e932-49bb-9b95-dacccec779fa
+2025-05-22 20:57:41,037 [INFO] Iniciando actualización de usuario con ID b5ade5f0-e932-49bb-9b95-dacccec779fa
+2025-05-22 20:57:41,105 [INFO] Usuario con ID b5ade5f0-e932-49bb-9b95-dacccec779fa actualizado exitosamente. Documentos modificados: 1
+2025-05-22 20:57:41,105 [INFO] Usuario ID b5ade5f0-e932-49bb-9b95-dacccec779fa actualizado exitosamente en la base de datos.
+2025-05-22 20:57:41,369 [INFO] Evento de actividad publicado: Usuario b5ade5f0-e932-49bb-9b95-dacccec779fa actualizado.
+2025-05-22 20:57:41,369 [INFO] Usuario con ID b5ade5f0-e932-49bb-9b95-dacccec779fa actualizado exitosamente.
+2025-05-22 20:57:41,470 [INFO] Conexión a MongoDB establecida correctamente.
+2025-05-22 20:57:41,474 [INFO] Procesando UserActivityMadeEvent para usuario ID b5ade5f0-e932-49bb-9b95-dacccec779fa
+2025-05-22 20:57:41,475 [INFO] Iniciando inserción de actividad de usuario con ID b5ade5f0-e932-49bb-9b95-dacccec779fa
+2025-05-22 20:57:41,561 [INFO] Actividad de usuario con ID b5ade5f0-e932-49bb-9b95-dacccec779fa insertada exitosamente en la base de datos.
+2025-05-22 20:57:41,561 [INFO] Actividad de usuario ID b5ade5f0-e932-49bb-9b95-dacccec779fa guardada exitosamente en la base de datos.
+2025-05-22 20:58:27,472 [INFO] Iniciando solicitud GET /api/users/b5ade5f0-e932-49bb-9b95-dacccec779fa/activity
+2025-05-22 20:58:27,475 [INFO] Procesando consulta UserActivityQuery para el usuario b5ade5f0-e932-49bb-9b95-dacccec779fa
+2025-05-22 20:58:27,484 [INFO] Iniciando consulta de actividades para el usuario b5ade5f0-e932-49bb-9b95-dacccec779fa desde 5/22/2025 12:00:00 AM
+2025-05-22 20:58:27,557 [INFO] Consulta completada exitosamente. Total actividades encontradas: 1
+2025-05-22 20:58:27,558 [INFO] Consulta completada exitosamente. Total actividades: 1
+2025-05-22 20:58:27,558 [INFO] Actividades obtenidas exitosamente para el usuario con ID: b5ade5f0-e932-49bb-9b95-dacccec779fa
+2025-05-22 20:59:16,416 [INFO] Iniciando solicitud GET /api/users/getuserbyemail para el email: mariangelicaibarraluces@gmail.com
+2025-05-22 20:59:16,418 [INFO] Procesando consulta GetUserByEmailQuery para el email: mariangelicaibarraluces@gmail.com
+2025-05-22 20:59:16,418 [INFO] Iniciando búsqueda de usuario con email mariangelicaibarraluces@gmail.com
+2025-05-22 20:59:16,488 [WARN] No se encontró usuario con email mariangelicaibarraluces@gmail.com
+2025-05-22 20:59:16,488 [WARN] No se encontró usuario con el email: mariangelicaibarraluces@gmail.com
+2025-05-22 20:59:16,525 [ERROR] Error en GetUserByEmailQueryHandler al obtener usuario con email: mariangelicaibarraluces@gmail.com
+System.Collections.Generic.KeyNotFoundException: Usuario no encontrado.
+   at Usuarios.Infrastructure.Queries.QueryHandlers.GetUserByEmailQueryHandler.Handle(GetUserByEmailQuery request, CancellationToken cancellationToken) in C:\Users\anale\OneDrive\Documentos\UCAB\DESA\Proyecto\Usuarios-Microservice\Usuarios.Infrastructure\Queries\QueryHandlers\GetUserByEmailQueryHandler.cs:line 31
+2025-05-22 20:59:16,575 [ERROR] Error interno al obtener usuario con email: mariangelicaibarraluces@gmail.com
+System.Collections.Generic.KeyNotFoundException: Usuario no encontrado.
+   at Usuarios.Infrastructure.Queries.QueryHandlers.GetUserByEmailQueryHandler.Handle(GetUserByEmailQuery request, CancellationToken cancellationToken) in C:\Users\anale\OneDrive\Documentos\UCAB\DESA\Proyecto\Usuarios-Microservice\Usuarios.Infrastructure\Queries\QueryHandlers\GetUserByEmailQueryHandler.cs:line 31
+   at Usuarios.Presentation.Controllers.UsersController.GetUserByEmail(String email) in C:\Users\anale\OneDrive\Documentos\UCAB\DESA\Proyecto\Usuarios-Microservice\Usuarios.API\Controllers\UserController.cs:line 148
+2025-05-22 20:59:43,092 [INFO] Iniciando solicitud GET /api/roles/allRoles
+2025-05-22 20:59:43,095 [INFO] Procesando consulta GetAllRolesQuery
+2025-05-22 20:59:43,096 [INFO] Iniciando consulta para obtener todos los roles.
+2025-05-22 20:59:43,178 [INFO] Consulta completada exitosamente. Total roles: 4
+2025-05-22 20:59:43,179 [INFO] Consulta completada exitosamente. Total roles: 4
+2025-05-22 20:59:43,179 [INFO] Roles obtenidos exitosamente. Cantidad: 4
+2025-05-22 20:59:50,785 [INFO] Iniciando solicitud GET /api/users/all
+2025-05-22 20:59:50,788 [INFO] Procesando consulta GetAllUsersQuery
+2025-05-22 20:59:50,789 [INFO] Iniciando consulta para obtener todos los usuarios.
+2025-05-22 20:59:50,855 [INFO] Consulta completada exitosamente. Total usuarios: 5
+2025-05-22 20:59:50,856 [INFO] Consulta completada exitosamente. Total usuarios: 5
+2025-05-22 20:59:50,856 [INFO] Solicitud completada exitosamente.
+2025-05-22 21:02:28,718 [INFO] Iniciando solicitud GET /api/users/getuserbyemail para el email: mariangelicaibarraluces@gmail.com
+2025-05-22 21:02:28,720 [INFO] Procesando consulta GetUserByEmailQuery para el email: mariangelicaibarraluces@gmail.com
+2025-05-22 21:02:28,720 [INFO] Iniciando búsqueda de usuario con email mariangelicaibarraluces@gmail.com
+2025-05-22 21:02:28,789 [WARN] No se encontró usuario con email mariangelicaibarraluces@gmail.com
+2025-05-22 21:02:28,789 [WARN] No se encontró usuario con el email: mariangelicaibarraluces@gmail.com
+2025-05-22 21:02:28,815 [ERROR] Error en GetUserByEmailQueryHandler al obtener usuario con email: mariangelicaibarraluces@gmail.com
+System.Collections.Generic.KeyNotFoundException: Usuario no encontrado.
+   at Usuarios.Infrastructure.Queries.QueryHandlers.GetUserByEmailQueryHandler.Handle(GetUserByEmailQuery request, CancellationToken cancellationToken) in C:\Users\anale\OneDrive\Documentos\UCAB\DESA\Proyecto\Usuarios-Microservice\Usuarios.Infrastructure\Queries\QueryHandlers\GetUserByEmailQueryHandler.cs:line 31
+2025-05-22 21:02:28,869 [ERROR] Error interno al obtener usuario con email: mariangelicaibarraluces@gmail.com
+System.Collections.Generic.KeyNotFoundException: Usuario no encontrado.
+   at Usuarios.Infrastructure.Queries.QueryHandlers.GetUserByEmailQueryHandler.Handle(GetUserByEmailQuery request, CancellationToken cancellationToken) in C:\Users\anale\OneDrive\Documentos\UCAB\DESA\Proyecto\Usuarios-Microservice\Usuarios.Infrastructure\Queries\QueryHandlers\GetUserByEmailQueryHandler.cs:line 31
+   at Usuarios.Presentation.Controllers.UsersController.GetUserByEmail(String email) in C:\Users\anale\OneDrive\Documentos\UCAB\DESA\Proyecto\Usuarios-Microservice\Usuarios.API\Controllers\UserController.cs:line 148
+2025-05-22 21:02:54,755 [INFO] Iniciando solicitud GET /api/users/getuserbyemail para el email: mariangelicaibarra@gmail.com
+2025-05-22 21:02:54,755 [INFO] Procesando consulta GetUserByEmailQuery para el email: mariangelicaibarra@gmail.com
+2025-05-22 21:02:54,755 [INFO] Iniciando búsqueda de usuario con email mariangelicaibarra@gmail.com
+2025-05-22 21:02:54,829 [INFO] Usuario con email mariangelicaibarra@gmail.com encontrado exitosamente.
+2025-05-22 21:02:54,831 [INFO] Usuario obtenido exitosamente con email: mariangelicaibarra@gmail.com
+2025-05-22 21:02:54,831 [INFO] Usuario encontrado exitosamente con email: mariangelicaibarra@gmail.com
+2025-05-22 21:03:28,939 [INFO] Iniciando solicitud PUT /api/users/updaterole/b5ade5f0-e932-49bb-9b95-dacccec779fa
+2025-05-22 21:03:28,941 [INFO] Procesando comando UpdateUserRole para el usuario b5ade5f0-e932-49bb-9b95-dacccec779fa
+2025-05-22 21:03:28,942 [INFO] Iniciando búsqueda de usuario con ID b5ade5f0-e932-49bb-9b95-dacccec779fa
+2025-05-22 21:03:29,012 [INFO] Usuario con ID b5ade5f0-e932-49bb-9b95-dacccec779fa obtenido exitosamente.
+2025-05-22 21:03:29,012 [INFO] Iniciando búsqueda de rol con ID 6818b9e5035415cfcd8aa231
+2025-05-22 21:03:29,085 [INFO] Rol con ID 6818b9e5035415cfcd8aa231 obtenido exitosamente.
+2025-05-22 21:03:29,085 [INFO] Rol del usuario b5ade5f0-e932-49bb-9b95-dacccec779fa actualizado a 6818b9e5035415cfcd8aa231
+2025-05-22 21:03:29,085 [INFO] Iniciando actualización de usuario con ID b5ade5f0-e932-49bb-9b95-dacccec779fa
+2025-05-22 21:03:29,172 [INFO] Usuario con ID b5ade5f0-e932-49bb-9b95-dacccec779fa actualizado exitosamente. Documentos modificados: 1
+2025-05-22 21:03:29,172 [INFO] Cambios persistidos en la base de datos para el usuario b5ade5f0-e932-49bb-9b95-dacccec779fa
+2025-05-22 21:03:29,916 [INFO] Evento publicado: Usuario b5ade5f0-e932-49bb-9b95-dacccec779fa actualizado con nuevo rol 6818b9e5035415cfcd8aa231
+2025-05-22 21:03:29,916 [INFO] El rol del usuario con ID b5ade5f0-e932-49bb-9b95-dacccec779fa se actualizó correctamente.
+2025-05-22 21:03:30,120 [INFO] Procesando UserRoleUpdatedEvent para usuario ID b5ade5f0-e932-49bb-9b95-dacccec779fa
+2025-05-22 21:03:30,121 [INFO] Iniciando actualización de RoleId para el usuario con ID b5ade5f0-e932-49bb-9b95-dacccec779fa
+2025-05-22 21:03:30,244 [INFO] Usuario con ID b5ade5f0-e932-49bb-9b95-dacccec779fa actualizado exitosamente. RoleId modificado.
+2025-05-22 21:03:30,244 [INFO] Usuario ID b5ade5f0-e932-49bb-9b95-dacccec779fa actualizado exitosamente con nuevo RoleId 6818b9e5035415cfcd8aa231
+2025-05-22 21:09:15,682 [INFO] Iniciando solicitud POST /api/users/publishActivity para el usuario b5ade5f0-e932-49bb-9b95-dacccec779fa
+2025-05-22 21:09:16,158 [INFO] Evento de actividad publicado correctamente para el usuario b5ade5f0-e932-49bb-9b95-dacccec779fa
+2025-05-22 21:09:16,690 [INFO] Conexión a MongoDB establecida correctamente.
+2025-05-22 21:09:16,698 [INFO] Conexión a MongoDB establecida correctamente.
+2025-05-22 21:09:16,705 [INFO] Procesando UserActivityMadeEvent para usuario ID b5ade5f0-e932-49bb-9b95-dacccec779fa
+2025-05-22 21:09:16,707 [INFO] Iniciando inserción de actividad de usuario con ID b5ade5f0-e932-49bb-9b95-dacccec779fa
+2025-05-22 21:09:17,847 [INFO] Actividad de usuario con ID b5ade5f0-e932-49bb-9b95-dacccec779fa insertada exitosamente en la base de datos.
+2025-05-22 21:09:17,847 [INFO] Actividad de usuario ID b5ade5f0-e932-49bb-9b95-dacccec779fa guardada exitosamente en la base de datos.
+2025-05-22 21:09:41,175 [INFO] Iniciando solicitud GET /api/users/b5ade5f0-e932-49bb-9b95-dacccec779fa/activity
+2025-05-22 21:09:41,180 [INFO] Procesando consulta UserActivityQuery para el usuario b5ade5f0-e932-49bb-9b95-dacccec779fa
+2025-05-22 21:09:41,187 [INFO] Iniciando consulta de actividades para el usuario b5ade5f0-e932-49bb-9b95-dacccec779fa desde 5/22/2025 12:00:00 AM
+2025-05-22 21:09:41,310 [INFO] Consulta completada exitosamente. Total actividades encontradas: 2
+2025-05-22 21:09:41,311 [INFO] Consulta completada exitosamente. Total actividades: 2
+2025-05-22 21:09:41,311 [INFO] Actividades obtenidas exitosamente para el usuario con ID: b5ade5f0-e932-49bb-9b95-dacccec779fa
+2025-05-26 12:40:57,936 [INFO] Iniciando solicitud POST /api/roles/6818b9e5035415cfcd8aa231/add-permission/6818b269035415cfcd8aa21c
+2025-05-26 12:40:58,470 [INFO] Conexión a MongoDB establecida correctamente.
+2025-05-26 12:40:58,479 [INFO] Procesando comando AddPermissionToRole para el rol 6818b9e5035415cfcd8aa231 con permiso 6818b269035415cfcd8aa21c
+2025-05-26 12:40:58,483 [INFO] Iniciando búsqueda de rol con ID 6818b9e5035415cfcd8aa231
+2025-05-26 12:40:59,852 [INFO] Rol con ID 6818b9e5035415cfcd8aa231 obtenido exitosamente.
+2025-05-26 12:40:59,853 [INFO] Iniciando actualización de permisos para el rol 6818b9e5035415cfcd8aa231
+2025-05-26 12:40:59,999 [INFO] Permisos actualizados exitosamente para el rol 6818b9e5035415cfcd8aa231. Documentos modificados: 1
+2025-05-26 12:40:59,999 [INFO] Permiso 6818b269035415cfcd8aa21c agregado exitosamente al rol 6818b9e5035415cfcd8aa231
+2025-05-26 12:41:01,404 [INFO] Evento publicado: Permiso 6818b269035415cfcd8aa21c agregado al rol 6818b9e5035415cfcd8aa231
+2025-05-26 12:41:01,404 [INFO] Permiso 6818b269035415cfcd8aa21c agregado correctamente al rol 6818b9e5035415cfcd8aa231.
+2025-05-26 12:41:01,458 [INFO] Conexión a MongoDB establecida correctamente.
+2025-05-26 12:41:01,462 [INFO] Procesando PermissionAddedToRoleEvent para rol ID 6818b9e5035415cfcd8aa231, permiso ID 6818b269035415cfcd8aa21c
+2025-05-26 12:41:01,463 [INFO] Iniciando actualización de permisos para el rol con ID 6818b9e5035415cfcd8aa231
+2025-05-26 12:41:01,536 [INFO] Permisos actualizados exitosamente para el rol con ID 6818b9e5035415cfcd8aa231. Documentos modificados: 1
+2025-05-26 12:41:01,536 [INFO] Permiso ID 6818b269035415cfcd8aa21c agregado exitosamente al rol ID 6818b9e5035415cfcd8aa231
+2025-05-26 12:41:52,850 [INFO] Iniciando solicitud DELETE /api/roles/6818b9e5035415cfcd8aa231/remove-permission/6818b269035415cfcd8aa21c
+2025-05-26 12:41:52,852 [INFO] Procesando comando RemovePermissionFromRole para el rol 6818b9e5035415cfcd8aa231 con permiso 6818b269035415cfcd8aa21c
+2025-05-26 12:41:52,853 [INFO] Iniciando búsqueda de rol con ID 6818b9e5035415cfcd8aa231
+2025-05-26 12:41:52,918 [INFO] Rol con ID 6818b9e5035415cfcd8aa231 obtenido exitosamente.
+2025-05-26 12:41:52,918 [INFO] Permiso 6818b269035415cfcd8aa21c removido del rol 6818b9e5035415cfcd8aa231
+2025-05-26 12:41:52,920 [INFO] Iniciando actualización del rol con ID 6818b9e5035415cfcd8aa231
+2025-05-26 12:41:53,000 [INFO] Rol con ID 6818b9e5035415cfcd8aa231 actualizado exitosamente. Documentos modificados: 1
+2025-05-26 12:41:53,000 [INFO] Cambios persistidos en el rol 6818b9e5035415cfcd8aa231
+2025-05-26 12:41:53,701 [INFO] Evento publicado: Permiso 6818b269035415cfcd8aa21c eliminado del rol 6818b9e5035415cfcd8aa231
+2025-05-26 12:41:53,701 [INFO] Permiso 6818b269035415cfcd8aa21c eliminado correctamente del rol 6818b9e5035415cfcd8aa231.
+2025-05-26 12:41:53,711 [INFO] Procesando PermissionRemovedFromRoleEvent para rol ID 6818b9e5035415cfcd8aa231, permiso ID 6818b269035415cfcd8aa21c
+2025-05-26 12:41:53,712 [INFO] Iniciando eliminación de permiso 6818b269035415cfcd8aa21c del rol 6818b9e5035415cfcd8aa231
+2025-05-26 12:41:53,783 [INFO] Permiso 6818b269035415cfcd8aa21c eliminado exitosamente del rol 6818b9e5035415cfcd8aa231. Documentos modificados: 1
+2025-05-26 12:41:53,783 [INFO] Permiso ID 6818b269035415cfcd8aa21c eliminado exitosamente del rol ID 6818b9e5035415cfcd8aa231
+2025-05-26 22:18:58,551 [INFO] Iniciando solicitud GET /api/permissions/allPermissions
+2025-05-26 22:18:59,046 [INFO] Conexión a MongoDB establecida correctamente.
+2025-05-26 22:18:59,053 [INFO] Procesando consulta GetAllPermissionsQuery
+2025-05-26 22:18:59,055 [INFO] Iniciando consulta para obtener todos los permisos.
+2025-05-26 22:19:00,582 [INFO] Consulta completada exitosamente. Total permisos: 25
+2025-05-26 22:19:00,583 [INFO] Consulta completada exitosamente. Total permisos: 25
+2025-05-26 22:19:00,583 [INFO] Permisos obtenidos exitosamente. Cantidad: 25
+2025-05-26 22:19:28,104 [INFO] Recibiendo solicitud para obtener permisos del rol 6818b6ff035415cfcd8aa229
+2025-05-26 22:19:28,106 [INFO] Procesando consulta GetPermissionsByRoleIdQuery para el rol 6818b6ff035415cfcd8aa229
+2025-05-26 22:19:28,108 [INFO] Buscando permisos para el rol con ID 6818b6ff035415cfcd8aa229
+2025-05-26 22:19:28,197 [INFO] Permisos del rol 6818b6ff035415cfcd8aa229: 6818b269035415cfcd8aa21c, 6818b389035415cfcd8aa21d, 6818b3be035415cfcd8aa21e, 6818b40a035415cfcd8aa21f, 6818b4b6035415cfcd8aa220, 6818b4de035415cfcd8aa221, 6818b50d035415cfcd8aa222
+2025-05-26 22:19:28,197 [INFO] Consulta completada. Permisos del rol 6818b6ff035415cfcd8aa229: 6818b269035415cfcd8aa21c, 6818b389035415cfcd8aa21d, 6818b3be035415cfcd8aa21e, 6818b40a035415cfcd8aa21f, 6818b4b6035415cfcd8aa220, 6818b4de035415cfcd8aa221, 6818b50d035415cfcd8aa222
+2025-05-26 22:19:28,197 [INFO] Permisos obtenidos para el rol 6818b6ff035415cfcd8aa229: 6818b269035415cfcd8aa21c, 6818b389035415cfcd8aa21d, 6818b3be035415cfcd8aa21e, 6818b40a035415cfcd8aa21f, 6818b4b6035415cfcd8aa220, 6818b4de035415cfcd8aa221, 6818b50d035415cfcd8aa222
+2025-06-17 14:15:19,338 [INFO] Iniciando solicitud GET /api/users/getuserbyemail para el email: mariangelicaibarraluces@gmail.com
+2025-06-17 14:15:20,036 [INFO] Conexión a MongoDB establecida correctamente.
+2025-06-17 14:15:20,043 [INFO] Conexión a MongoDB establecida correctamente.
+2025-06-17 14:15:20,047 [INFO] Procesando consulta GetUserByEmailQuery para el email: mariangelicaibarraluces@gmail.com
+2025-06-17 14:15:20,049 [INFO] Iniciando búsqueda de usuario con email mariangelicaibarraluces@gmail.com
+2025-06-17 14:15:21,223 [INFO] Usuario con email mariangelicaibarraluces@gmail.com encontrado exitosamente.
+2025-06-17 14:15:21,223 [INFO] Usuario obtenido exitosamente con email: mariangelicaibarraluces@gmail.com
+2025-06-17 14:15:21,224 [INFO] Usuario encontrado exitosamente con email: mariangelicaibarraluces@gmail.com
+2025-06-17 14:21:10,255 [INFO] Iniciando solicitud GET /api/users/getuserbyemail para el email: mariangelicaibarraluces@gmail.com
+2025-06-17 14:21:10,256 [INFO] Procesando consulta GetUserByEmailQuery para el email: mariangelicaibarraluces@gmail.com
+2025-06-17 14:21:10,256 [INFO] Iniciando búsqueda de usuario con email mariangelicaibarraluces@gmail.com
+2025-06-17 14:21:10,318 [INFO] Usuario con email mariangelicaibarraluces@gmail.com encontrado exitosamente.
+2025-06-17 14:21:10,318 [INFO] Usuario obtenido exitosamente con email: mariangelicaibarraluces@gmail.com
+2025-06-17 14:21:10,318 [INFO] Usuario encontrado exitosamente con email: mariangelicaibarraluces@gmail.com
+2025-06-17 14:21:27,099 [INFO] Iniciando solicitud GET /api/users/getuserbyemail para el email: mariangelicaibarraluces@gmail.com
+2025-06-17 14:21:27,100 [INFO] Procesando consulta GetUserByEmailQuery para el email: mariangelicaibarraluces@gmail.com
+2025-06-17 14:21:27,100 [INFO] Iniciando búsqueda de usuario con email mariangelicaibarraluces@gmail.com
+2025-06-17 14:21:27,170 [INFO] Usuario con email mariangelicaibarraluces@gmail.com encontrado exitosamente.
+2025-06-17 14:21:27,170 [INFO] Usuario obtenido exitosamente con email: mariangelicaibarraluces@gmail.com
+2025-06-17 14:21:27,170 [INFO] Usuario encontrado exitosamente con email: mariangelicaibarraluces@gmail.com
+2025-06-19 09:21:40,543 [INFO] Iniciando solicitud GET /api/users/getuserbyemail para el email: mariangelicaibarraluces@gmail.com
+2025-06-19 09:21:41,145 [INFO] Conexión a MongoDB establecida correctamente.
+2025-06-19 09:21:41,153 [INFO] Conexión a MongoDB establecida correctamente.
+2025-06-19 09:21:41,158 [INFO] Procesando consulta GetUserByEmailQuery para el email: mariangelicaibarraluces@gmail.com
+2025-06-19 09:21:41,160 [INFO] Iniciando búsqueda de usuario con email mariangelicaibarraluces@gmail.com
+2025-06-19 09:21:42,392 [INFO] Usuario con email mariangelicaibarraluces@gmail.com encontrado exitosamente.
+2025-06-19 09:21:42,392 [INFO] Usuario obtenido exitosamente con email: mariangelicaibarraluces@gmail.com
+2025-06-19 09:21:42,392 [INFO] Usuario encontrado exitosamente con email: mariangelicaibarraluces@gmail.com
+2025-06-19 09:21:58,462 [INFO] Iniciando solicitud GET /api/users/getuserbyemail para el email: mariangelicaibarraluces@gmail.com
+2025-06-19 09:21:58,462 [INFO] Procesando consulta GetUserByEmailQuery para el email: mariangelicaibarraluces@gmail.com
+2025-06-19 09:21:58,462 [INFO] Iniciando búsqueda de usuario con email mariangelicaibarraluces@gmail.com
+2025-06-19 09:21:58,531 [INFO] Usuario con email mariangelicaibarraluces@gmail.com encontrado exitosamente.
+2025-06-19 09:21:58,531 [INFO] Usuario obtenido exitosamente con email: mariangelicaibarraluces@gmail.com
+2025-06-19 09:21:58,531 [INFO] Usuario encontrado exitosamente con email: mariangelicaibarraluces@gmail.com
+2025-06-19 09:22:51,978 [INFO] Iniciando solicitud GET /api/users/getuserbyemail para el email: mariangelicaibarraluces@gmail.com
+2025-06-19 09:22:51,980 [INFO] Procesando consulta GetUserByEmailQuery para el email: mariangelicaibarraluces@gmail.com
+2025-06-19 09:22:51,980 [INFO] Iniciando búsqueda de usuario con email mariangelicaibarraluces@gmail.com
+2025-06-19 09:22:52,046 [INFO] Usuario con email mariangelicaibarraluces@gmail.com encontrado exitosamente.
+2025-06-19 09:22:52,046 [INFO] Usuario obtenido exitosamente con email: mariangelicaibarraluces@gmail.com
+2025-06-19 09:22:52,046 [INFO] Usuario encontrado exitosamente con email: mariangelicaibarraluces@gmail.com
+2025-06-19 09:24:17,093 [INFO] Iniciando solicitud GET /api/users/getuserbyemail para el email: mariangelicaibarraluces@gmail.com
+2025-06-19 09:24:17,093 [INFO] Procesando consulta GetUserByEmailQuery para el email: mariangelicaibarraluces@gmail.com
+2025-06-19 09:24:17,093 [INFO] Iniciando búsqueda de usuario con email mariangelicaibarraluces@gmail.com
+2025-06-19 09:24:17,155 [INFO] Usuario con email mariangelicaibarraluces@gmail.com encontrado exitosamente.
+2025-06-19 09:24:17,155 [INFO] Usuario obtenido exitosamente con email: mariangelicaibarraluces@gmail.com
+2025-06-19 09:24:17,155 [INFO] Usuario encontrado exitosamente con email: mariangelicaibarraluces@gmail.com
+2025-06-19 09:24:45,733 [INFO] Iniciando solicitud GET /api/users/getuserbyemail para el email: mariangelicaibarraluces@gmail.com
+2025-06-19 09:24:45,734 [INFO] Procesando consulta GetUserByEmailQuery para el email: mariangelicaibarraluces@gmail.com
+2025-06-19 09:24:45,734 [INFO] Iniciando búsqueda de usuario con email mariangelicaibarraluces@gmail.com
+2025-06-19 09:24:45,800 [INFO] Usuario con email mariangelicaibarraluces@gmail.com encontrado exitosamente.
+2025-06-19 09:24:45,800 [INFO] Usuario obtenido exitosamente con email: mariangelicaibarraluces@gmail.com
+2025-06-19 09:24:45,801 [INFO] Usuario encontrado exitosamente con email: mariangelicaibarraluces@gmail.com
+2025-06-19 09:26:02,144 [INFO] Iniciando solicitud GET /api/users/getuserbyemail para el email: mariangelicaibarraluces@gmail.com
+2025-06-19 09:26:02,145 [INFO] Procesando consulta GetUserByEmailQuery para el email: mariangelicaibarraluces@gmail.com
+2025-06-19 09:26:02,145 [INFO] Iniciando búsqueda de usuario con email mariangelicaibarraluces@gmail.com
+2025-06-19 09:26:02,206 [INFO] Usuario con email mariangelicaibarraluces@gmail.com encontrado exitosamente.
+2025-06-19 09:26:02,206 [INFO] Usuario obtenido exitosamente con email: mariangelicaibarraluces@gmail.com
+2025-06-19 09:26:02,206 [INFO] Usuario encontrado exitosamente con email: mariangelicaibarraluces@gmail.com
+2025-06-19 09:26:40,319 [INFO] Iniciando solicitud GET /api/users/getuserbyemail para el email: mariangelicaibarraluces@gmail.com
+2025-06-19 09:26:40,319 [INFO] Procesando consulta GetUserByEmailQuery para el email: mariangelicaibarraluces@gmail.com
+2025-06-19 09:26:40,319 [INFO] Iniciando búsqueda de usuario con email mariangelicaibarraluces@gmail.com
+2025-06-19 09:26:40,382 [INFO] Usuario con email mariangelicaibarraluces@gmail.com encontrado exitosamente.
+2025-06-19 09:26:40,382 [INFO] Usuario obtenido exitosamente con email: mariangelicaibarraluces@gmail.com
+2025-06-19 09:26:40,382 [INFO] Usuario encontrado exitosamente con email: mariangelicaibarraluces@gmail.com
+2025-06-19 09:26:51,774 [INFO] Iniciando solicitud GET /api/users/getuserbyemail para el email: mariangelicaibarraluces@gmail.com
+2025-06-19 09:26:51,774 [INFO] Procesando consulta GetUserByEmailQuery para el email: mariangelicaibarraluces@gmail.com
+2025-06-19 09:26:51,774 [INFO] Iniciando búsqueda de usuario con email mariangelicaibarraluces@gmail.com
+2025-06-19 09:26:51,845 [INFO] Usuario con email mariangelicaibarraluces@gmail.com encontrado exitosamente.
+2025-06-19 09:26:51,845 [INFO] Usuario obtenido exitosamente con email: mariangelicaibarraluces@gmail.com
+2025-06-19 09:26:51,845 [INFO] Usuario encontrado exitosamente con email: mariangelicaibarraluces@gmail.com
+2025-06-19 09:30:04,899 [INFO] Iniciando solicitud GET /api/users/getuserbyemail para el email: mariangelicaibarraluces@gmail.com
+2025-06-19 09:30:04,899 [INFO] Procesando consulta GetUserByEmailQuery para el email: mariangelicaibarraluces@gmail.com
+2025-06-19 09:30:04,899 [INFO] Iniciando búsqueda de usuario con email mariangelicaibarraluces@gmail.com
+2025-06-19 09:30:04,968 [INFO] Usuario con email mariangelicaibarraluces@gmail.com encontrado exitosamente.
+2025-06-19 09:30:04,968 [INFO] Usuario obtenido exitosamente con email: mariangelicaibarraluces@gmail.com
+2025-06-19 09:30:04,968 [INFO] Usuario encontrado exitosamente con email: mariangelicaibarraluces@gmail.com
+2025-06-19 09:31:07,057 [INFO] Iniciando solicitud GET /api/users/getuserbyemail para el email: mariangelicaibarraluces@gmail.com
+2025-06-19 09:31:07,058 [INFO] Procesando consulta GetUserByEmailQuery para el email: mariangelicaibarraluces@gmail.com
+2025-06-19 09:31:07,058 [INFO] Iniciando búsqueda de usuario con email mariangelicaibarraluces@gmail.com
+2025-06-19 09:31:07,134 [INFO] Usuario con email mariangelicaibarraluces@gmail.com encontrado exitosamente.
+2025-06-19 09:31:07,134 [INFO] Usuario obtenido exitosamente con email: mariangelicaibarraluces@gmail.com
+2025-06-19 09:31:07,134 [INFO] Usuario encontrado exitosamente con email: mariangelicaibarraluces@gmail.com
+2025-06-19 09:31:12,012 [INFO] Iniciando solicitud GET /api/users/getuserbyemail para el email: mariangelicaibarraluces@gmail.com
+2025-06-19 09:31:12,013 [INFO] Procesando consulta GetUserByEmailQuery para el email: mariangelicaibarraluces@gmail.com
+2025-06-19 09:31:12,013 [INFO] Iniciando búsqueda de usuario con email mariangelicaibarraluces@gmail.com
+2025-06-19 09:31:12,088 [INFO] Usuario con email mariangelicaibarraluces@gmail.com encontrado exitosamente.
+2025-06-19 09:31:12,088 [INFO] Usuario obtenido exitosamente con email: mariangelicaibarraluces@gmail.com
+2025-06-19 09:31:12,088 [INFO] Usuario encontrado exitosamente con email: mariangelicaibarraluces@gmail.com
+2025-06-19 09:32:13,834 [INFO] Iniciando solicitud GET /api/users/getuserbyemail para el email: mariangelicaibarraluces@gmail.com
+2025-06-19 09:32:13,835 [INFO] Procesando consulta GetUserByEmailQuery para el email: mariangelicaibarraluces@gmail.com
+2025-06-19 09:32:13,835 [INFO] Iniciando búsqueda de usuario con email mariangelicaibarraluces@gmail.com
+2025-06-19 09:32:13,908 [INFO] Usuario con email mariangelicaibarraluces@gmail.com encontrado exitosamente.
+2025-06-19 09:32:13,908 [INFO] Usuario obtenido exitosamente con email: mariangelicaibarraluces@gmail.com
+2025-06-19 09:32:13,908 [INFO] Usuario encontrado exitosamente con email: mariangelicaibarraluces@gmail.com
+2025-06-19 09:32:52,759 [INFO] Iniciando solicitud GET /api/users/getuserbyemail para el email: mariangelicaibarraluces@gmail.com
+2025-06-19 09:32:52,760 [INFO] Procesando consulta GetUserByEmailQuery para el email: mariangelicaibarraluces@gmail.com
+2025-06-19 09:32:52,760 [INFO] Iniciando búsqueda de usuario con email mariangelicaibarraluces@gmail.com
+2025-06-19 09:32:52,826 [INFO] Usuario con email mariangelicaibarraluces@gmail.com encontrado exitosamente.
+2025-06-19 09:32:52,826 [INFO] Usuario obtenido exitosamente con email: mariangelicaibarraluces@gmail.com
+2025-06-19 09:32:52,826 [INFO] Usuario encontrado exitosamente con email: mariangelicaibarraluces@gmail.com
+2025-06-19 09:33:12,413 [INFO] Iniciando solicitud GET /api/users/getuserbyemail para el email: mariangelicaibarraluces@gmail.com
+2025-06-19 09:33:12,413 [INFO] Procesando consulta GetUserByEmailQuery para el email: mariangelicaibarraluces@gmail.com
+2025-06-19 09:33:12,413 [INFO] Iniciando búsqueda de usuario con email mariangelicaibarraluces@gmail.com
+2025-06-19 09:33:12,488 [INFO] Usuario con email mariangelicaibarraluces@gmail.com encontrado exitosamente.
+2025-06-19 09:33:12,488 [INFO] Usuario obtenido exitosamente con email: mariangelicaibarraluces@gmail.com
+2025-06-19 09:33:12,488 [INFO] Usuario encontrado exitosamente con email: mariangelicaibarraluces@gmail.com
+2025-06-19 09:33:23,908 [INFO] Iniciando solicitud GET /api/users/getuserbyemail para el email: mariangelicaibarraluces@gmail.com
+2025-06-19 09:33:23,908 [INFO] Procesando consulta GetUserByEmailQuery para el email: mariangelicaibarraluces@gmail.com
+2025-06-19 09:33:23,908 [INFO] Iniciando búsqueda de usuario con email mariangelicaibarraluces@gmail.com
+2025-06-19 09:33:23,972 [INFO] Usuario con email mariangelicaibarraluces@gmail.com encontrado exitosamente.
+2025-06-19 09:33:23,972 [INFO] Usuario obtenido exitosamente con email: mariangelicaibarraluces@gmail.com
+2025-06-19 09:33:23,972 [INFO] Usuario encontrado exitosamente con email: mariangelicaibarraluces@gmail.com
+2025-06-19 17:00:28,738 [INFO] Iniciando solicitud GET /api/users/getuserbyemail para el email: mariangelicaibarraluces@gmail.com
+2025-06-19 17:00:28,754 [INFO] Procesando consulta GetUserByEmailQuery para el email: mariangelicaibarraluces@gmail.com
+2025-06-19 17:00:28,754 [INFO] Iniciando búsqueda de usuario con email mariangelicaibarraluces@gmail.com
+2025-06-19 17:00:29,410 [INFO] Usuario con email mariangelicaibarraluces@gmail.com encontrado exitosamente.
+2025-06-19 17:00:29,410 [INFO] Usuario obtenido exitosamente con email: mariangelicaibarraluces@gmail.com
+2025-06-19 17:00:29,410 [INFO] Usuario encontrado exitosamente con email: mariangelicaibarraluces@gmail.com
+2025-06-22 18:07:42,999 [INFO] Conexión a MongoDB establecida correctamente.
+2025-06-22 18:07:43,015 [INFO] Conexión a MongoDB establecida correctamente.
+2025-06-22 20:02:34,183 [INFO] Conexión a MongoDB establecida correctamente.
+2025-06-22 20:02:34,196 [INFO] Conexión a MongoDB establecida correctamente.

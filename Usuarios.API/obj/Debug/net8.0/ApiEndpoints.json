@@ -1,0 +1,228 @@
+[
+  {
+    "ContainingType": "Usuarios.Presentation.Controllers.UsersController",
+    "Method": "AddPermissionToRole",
+    "RelativePath": "api/users/{roleId}/add-permission/{permissionId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "roleId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "permissionId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Usuarios.Presentation.Controllers.UsersController",
+    "Method": "GetPermissionsFromRole",
+    "RelativePath": "api/users/{roleId}/permissions",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "roleId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Usuarios.Presentation.Controllers.UsersController",
+    "Method": "RemovePermissionFromRole",
+    "RelativePath": "api/users/{roleId}/remove-permission/{permissionId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "roleId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "permissionId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Usuarios.Presentation.Controllers.UsersController",
+    "Method": "GetByUserIdAsync",
+    "RelativePath": "api/users/{UserId}/activity",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "UserId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Usuarios.Presentation.Controllers.UsersController",
+    "Method": "GetAllPermissions",
+    "RelativePath": "api/users/allPermissions",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Usuarios.Presentation.Controllers.UsersController",
+    "Method": "GetAllUsers",
+    "RelativePath": "api/users/allUsers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Usuarios.Presentation.Controllers.UsersController",
+    "Method": "CreateUser",
+    "RelativePath": "api/users/createUser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userDto",
+        "Type": "Usuarios.Application.DTOs.CreateUserDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Usuarios.Presentation.Controllers.UsersController",
+    "Method": "GetAllRoles",
+    "RelativePath": "api/users/GetallRoles",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Usuarios.Presentation.Controllers.UsersController",
+    "Method": "GetUserByEmail",
+    "RelativePath": "api/users/getuserbyemail",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Usuarios.Presentation.Controllers.UsersController",
+    "Method": "GetUserById",
+    "RelativePath": "api/users/getuserbyid/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Usuarios.Presentation.Controllers.UsersController",
+    "Method": "GetUserByName",
+    "RelativePath": "api/users/getuserbyname/{name}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Usuarios.Presentation.Controllers.UsersController",
+    "Method": "PublishUserActivity",
+    "RelativePath": "api/users/publishActivity",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createUserActivityDto",
+        "Type": "Usuarios.Application.DTOs.CreateUserActivityDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Usuarios.Presentation.Controllers.UsersController",
+    "Method": "UpdateUser",
+    "RelativePath": "api/users/update/{id}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "userDto",
+        "Type": "Usuarios.Application.DTOs.UpdateUserDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Usuarios.Presentation.Controllers.UsersController",
+    "Method": "UpdateUserRole",
+    "RelativePath": "api/users/updaterole/{userId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "updateUserRoleDto",
+        "Type": "Usuarios.Application.DTOs.UpdateUserRoleDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
