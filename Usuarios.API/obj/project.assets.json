@@ -6863,11 +6863,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\OneDrive\\Desktop\\Desarrollo\\EntregaFinalDesarrollo\\Microservices\\UsuarioMS\\Usuarios.API\\Usuarios.API.csproj",
+      "projectUniqueName": "C:\\Users\\user\\OneDrive\\Desktop\\Desarrollo\\EntregaFinalDesarrollo\\SubidosMicros\\UsuarioMS\\Usuarios.API\\Usuarios.API.csproj",
       "projectName": "Usuarios.API",
-      "projectPath": "C:\\Users\\user\\OneDrive\\Desktop\\Desarrollo\\EntregaFinalDesarrollo\\Microservices\\UsuarioMS\\Usuarios.API\\Usuarios.API.csproj",
+      "projectPath": "C:\\Users\\user\\OneDrive\\Desktop\\Desarrollo\\EntregaFinalDesarrollo\\SubidosMicros\\UsuarioMS\\Usuarios.API\\Usuarios.API.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\OneDrive\\Desktop\\Desarrollo\\EntregaFinalDesarrollo\\Microservices\\UsuarioMS\\Usuarios.API\\obj\\",
+      "outputPath": "C:\\Users\\user\\OneDrive\\Desktop\\Desarrollo\\EntregaFinalDesarrollo\\SubidosMicros\\UsuarioMS\\Usuarios.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -6888,14 +6888,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\user\\OneDrive\\Desktop\\Desarrollo\\EntregaFinalDesarrollo\\Microservices\\UsuarioMS\\Usuarios.Application\\Usuarios.Application.csproj": {
-              "projectPath": "C:\\Users\\user\\OneDrive\\Desktop\\Desarrollo\\EntregaFinalDesarrollo\\Microservices\\UsuarioMS\\Usuarios.Application\\Usuarios.Application.csproj"
+            "C:\\Users\\user\\OneDrive\\Desktop\\Desarrollo\\EntregaFinalDesarrollo\\SubidosMicros\\UsuarioMS\\Usuarios.Application\\Usuarios.Application.csproj": {
+              "projectPath": "C:\\Users\\user\\OneDrive\\Desktop\\Desarrollo\\EntregaFinalDesarrollo\\SubidosMicros\\UsuarioMS\\Usuarios.Application\\Usuarios.Application.csproj"
             },
-            "C:\\Users\\user\\OneDrive\\Desktop\\Desarrollo\\EntregaFinalDesarrollo\\Microservices\\UsuarioMS\\Usuarios.Domain\\Usuarios.Domain.csproj": {
-              "projectPath": "C:\\Users\\user\\OneDrive\\Desktop\\Desarrollo\\EntregaFinalDesarrollo\\Microservices\\UsuarioMS\\Usuarios.Domain\\Usuarios.Domain.csproj"
+            "C:\\Users\\user\\OneDrive\\Desktop\\Desarrollo\\EntregaFinalDesarrollo\\SubidosMicros\\UsuarioMS\\Usuarios.Domain\\Usuarios.Domain.csproj": {
+              "projectPath": "C:\\Users\\user\\OneDrive\\Desktop\\Desarrollo\\EntregaFinalDesarrollo\\SubidosMicros\\UsuarioMS\\Usuarios.Domain\\Usuarios.Domain.csproj"
             },
-            "C:\\Users\\user\\OneDrive\\Desktop\\Desarrollo\\EntregaFinalDesarrollo\\Microservices\\UsuarioMS\\Usuarios.Infrastructure\\Usuarios.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\user\\OneDrive\\Desktop\\Desarrollo\\EntregaFinalDesarrollo\\Microservices\\UsuarioMS\\Usuarios.Infrastructure\\Usuarios.Infrastructure.csproj"
+            "C:\\Users\\user\\OneDrive\\Desktop\\Desarrollo\\EntregaFinalDesarrollo\\SubidosMicros\\UsuarioMS\\Usuarios.Infrastructure\\Usuarios.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\user\\OneDrive\\Desktop\\Desarrollo\\EntregaFinalDesarrollo\\SubidosMicros\\UsuarioMS\\Usuarios.Infrastructure\\Usuarios.Infrastructure.csproj"
             }
           }
         }

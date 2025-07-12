@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UsLXYIswTp0=",
+  "dgSpecHash": "StPY4tg4OR8=",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\OneDrive\\Desktop\\Desarrollo\\EntregaFinalDesarrollo\\Microservices\\UsuarioMS\\Usuarios.Domain\\Usuarios.Domain.csproj",
+  "projectFilePath": "c:\\Users\\user\\OneDrive\\Desktop\\Desarrollo\\EntregaFinalDesarrollo\\SubidosMicros\\UsuarioMS\\Usuarios.Domain\\Usuarios.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\fluentvalidation\\11.5.1\\fluentvalidation.11.5.1.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "A650/ui+SBY=",
+  "dgSpecHash": "l2mV1poZnRk=",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\OneDrive\\Desktop\\Desarrollo\\EntregaFinalDesarrollo\\Microservices\\UsuarioMS\\Usuarios.API\\Usuarios.API.csproj",
+  "projectFilePath": "C:\\Users\\user\\OneDrive\\Desktop\\Desarrollo\\EntregaFinalDesarrollo\\SubidosMicros\\UsuarioMS\\Usuarios.API\\Usuarios.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\dotnetenv\\3.1.1\\dotnetenv.3.1.1.nupkg.sha512",

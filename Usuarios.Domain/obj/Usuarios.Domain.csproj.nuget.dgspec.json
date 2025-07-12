@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\OneDrive\\Desktop\\Desarrollo\\EntregaFinalDesarrollo\\Microservices\\UsuarioMS\\Usuarios.Domain\\Usuarios.Domain.csproj": {}
+    "c:\\Users\\user\\OneDrive\\Desktop\\Desarrollo\\EntregaFinalDesarrollo\\SubidosMicros\\UsuarioMS\\Usuarios.Domain\\Usuarios.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\OneDrive\\Desktop\\Desarrollo\\EntregaFinalDesarrollo\\Microservices\\UsuarioMS\\Usuarios.Domain\\Usuarios.Domain.csproj": {
+    "c:\\Users\\user\\OneDrive\\Desktop\\Desarrollo\\EntregaFinalDesarrollo\\SubidosMicros\\UsuarioMS\\Usuarios.Domain\\Usuarios.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\OneDrive\\Desktop\\Desarrollo\\EntregaFinalDesarrollo\\Microservices\\UsuarioMS\\Usuarios.Domain\\Usuarios.Domain.csproj",
+        "projectUniqueName": "c:\\Users\\user\\OneDrive\\Desktop\\Desarrollo\\EntregaFinalDesarrollo\\SubidosMicros\\UsuarioMS\\Usuarios.Domain\\Usuarios.Domain.csproj",
         "projectName": "Usuarios.Domain",
-        "projectPath": "C:\\Users\\user\\OneDrive\\Desktop\\Desarrollo\\EntregaFinalDesarrollo\\Microservices\\UsuarioMS\\Usuarios.Domain\\Usuarios.Domain.csproj",
+        "projectPath": "c:\\Users\\user\\OneDrive\\Desktop\\Desarrollo\\EntregaFinalDesarrollo\\SubidosMicros\\UsuarioMS\\Usuarios.Domain\\Usuarios.Domain.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\OneDrive\\Desktop\\Desarrollo\\EntregaFinalDesarrollo\\Microservices\\UsuarioMS\\Usuarios.Domain\\obj\\",
+        "outputPath": "c:\\Users\\user\\OneDrive\\Desktop\\Desarrollo\\EntregaFinalDesarrollo\\SubidosMicros\\UsuarioMS\\Usuarios.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
